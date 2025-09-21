@@ -38,7 +38,7 @@ export default function Header() {
         <div className="flex h-14 sm:h-16 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2 sm:space-x-3 flex-shrink-0">
-            <ClinicLogo className="w-40 h-10 sm:w-48 sm:h-12" showText={false} width={180} height={45} />
+            <ClinicLogo className="w-32 h-8 sm:w-36 sm:h-9" showText={false} width={144} height={36} />
           </Link>
 
           {/* Desktop Navigation */}

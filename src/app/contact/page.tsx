@@ -333,7 +333,7 @@ export default function ContactPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <div className="bg-yellow-400 p-4 rounded-full w-20 h-20 mx-auto mb-6 shadow-lg flex items-center justify-center">
-              <ClinicLogo className="h-12 w-12" showText={false} />
+              <ClinicLogo className="h-8 w-8" showText={false} width={32} height={32} />
             </div>
             <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
               Ready to Schedule Your Appointment?

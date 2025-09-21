@@ -11,7 +11,7 @@ interface ClinicLogoProps {
 
 /**
  * ClinicLogo Component - Single source of truth for the clinic logo
- * Uses the official Clinic 1 Medical logo image with caduceus and wings
+ * Uses the official Clinic 1 Medical logo with integrated "1", caduceus, golden wings, and text
  */
 export default function ClinicLogo({
   className = "w-12 h-12",
@@ -22,8 +22,8 @@ export default function ClinicLogo({
 }: ClinicLogoProps) {
 
   // Single source of truth for logo path
-  const LOGO_PATH = '/assets/clinic1-medical-logo.svg'
-  const LOGO_ALT = 'Clinic 1 Medical Logo - Caduceus with Wings'
+  const LOGO_PATH = '/assets/clinic1-medical-logo.jpg'
+  const LOGO_ALT = 'Clinic 1 Medical Logo - Professional Medical Caduceus with Golden Wings'
 
   return (
     <div className="flex items-center space-x-3">

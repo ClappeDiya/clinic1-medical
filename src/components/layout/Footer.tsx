@@ -11,10 +11,10 @@ export default function Footer() {
           {/* Clinic Info */}
           <div className="space-y-4">
             <ClinicLogo
-              className="w-40 h-10"
+              className="w-32 h-8"
               showText={false}
-              width={180}
-              height={45}
+              width={144}
+              height={36}
             />
             <p className="text-emerald-100">
               Providing comprehensive family healthcare services to the Edmonton community with compassionate, 
