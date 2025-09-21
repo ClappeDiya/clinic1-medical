@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87CEEB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E0F6FF;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="buildingGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#D3D3D3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F0F0F0;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="glassGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87CEEB;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#4682B4;stop-opacity:0.1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Sky Background -->
+  <rect x="0" y="0" width="600" height="200" fill="url(#skyGradient)" />
+  
+  <!-- Ground -->
+  <rect x="0" y="280" width="600" height="120" fill="#2D5016" />
+  
+  <!-- Sidewalk -->
+  <rect x="0" y="320" width="600" height="80" fill="#C0C0C0" />
+  
+  <!-- Main Building -->
+  <rect x="150" y="120" width="300" height="200" fill="url(#buildingGradient)" stroke="#B0B0B0" stroke-width="2" />
+  
+  <!-- Building Sign Area -->
+  <rect x="200" y="280" width="200" height="40" fill="#047857" />
+  <text x="300" y="305" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">ROYAL CENTRE</text>
+  
+  <!-- Windows Row 1 -->
+  <rect x="170" y="140" width="40" height="30" fill="url(#glassGradient)" stroke="#4682B4" stroke-width="1" />
+  <rect x="220" y="140" width="40" height="30" fill="url(#glassGradient)" stroke="#4682B4" stroke-width="1" />
+  <rect x="270" y="140" width="40" height="30" fill="url(#glassGradient)" stroke="#4682B4" stroke-width="1" />
+  <rect x="320" y="140" width="40" height="30" fill="url(#glassGradient)" stroke="#4682B4" stroke-width="1" />
+  <rect x="370" y="140" width="40" height="30" fill="url(#glassGradient)" stroke="#4682B4" stroke-width="1" />
+  
+  <!-- Windows Row 2 -->
+  <rect x="170" y="180" width="40" height="30" fill="url(#glassGradient)" stroke="#4682B4" stroke-width="1" />
+  <rect x="220" y="180" width="40" height="30" fill="url(#glassGradient)" stroke="#4682B4" stroke-width="1" />
+  <rect x="270" y="180" width="40" height="30" fill="url(#glassGradient)" stroke="#4682B4" stroke-width="1" />
+  <rect x="320" y="180" width="40" height="30" fill="url(#glassGradient)" stroke="#4682B4" stroke-width="1" />
+  <rect x="370" y="180" width="40" height="30" fill="url(#glassGradient)" stroke="#4682B4" stroke-width="1" />
+  
+  <!-- Windows Row 3 -->
+  <rect x="170" y="220" width="40" height="30" fill="url(#glassGradient)" stroke="#4682B4" stroke-width="1" />
+  <rect x="220" y="220" width="40" height="30" fill="url(#glassGradient)" stroke="#4682B4" stroke-width="1" />
+  <rect x="270" y="220" width="40" height="30" fill="url(#glassGradient)" stroke="#4682B4" stroke-width="1" />
+  <rect x="320" y="220" width="40" height="30" fill="url(#glassGradient)" stroke="#4682B4" stroke-width="1" />
+  <rect x="370" y="220" width="40" height="30" fill="url(#glassGradient)" stroke="#4682B4" stroke-width="1" />
+  
+  <!-- Main Entrance -->
+  <rect x="280" y="260" width="40" height="60" fill="#2C3E50" stroke="#34495E" stroke-width="2" />
+  <circle cx="315" cy="290" r="2" fill="#F1C40F" />
+  
+  <!-- Entrance Canopy -->
+  <polygon points="260,260 340,260 350,280 250,280" fill="#047857" stroke="#035548" stroke-width="2" />
+  
+  <!-- Left Wing -->
+  <rect x="50" y="160" width="100" height="160" fill="#E8E8E8" stroke="#B0B0B0" stroke-width="1" />
+  <rect x="60" y="180" width="25" height="20" fill="url(#glassGradient)" stroke="#4682B4" stroke-width="1" />
+  <rect x="95" y="180" width="25" height="20" fill="url(#glassGradient)" stroke="#4682B4" stroke-width="1" />
+  <rect x="60" y="220" width="25" height="20" fill="url(#glassGradient)" stroke="#4682B4" stroke-width="1" />
+  <rect x="95" y="220" width="25" height="20" fill="url(#glassGradient)" stroke="#4682B4" stroke-width="1" />
+  <rect x="60" y="260" width="25" height="20" fill="url(#glassGradient)" stroke="#4682B4" stroke-width="1" />
+  <rect x="95" y="260" width="25" height="20" fill="url(#glassGradient)" stroke="#4682B4" stroke-width="1" />
+  
+  <!-- Right Wing -->
+  <rect x="450" y="160" width="100" height="160" fill="#E8E8E8" stroke="#B0B0B0" stroke-width="1" />
+  <rect x="460" y="180" width="25" height="20" fill="url(#glassGradient)" stroke="#4682B4" stroke-width="1" />
+  <rect x="495" y="180" width="25" height="20" fill="url(#glassGradient)" stroke="#4682B4" stroke-width="1" />
+  <rect x="460" y="220" width="25" height="20" fill="url(#glassGradient)" stroke="#4682B4" stroke-width="1" />
+  <rect x="495" y="220" width="25" height="20" fill="url(#glassGradient)" stroke="#4682B4" stroke-width="1" />
+  <rect x="460" y="260" width="25" height="20" fill="url(#glassGradient)" stroke="#4682B4" stroke-width="1" />
+  <rect x="495" y="260" width="25" height="20" fill="url(#glassGradient)" stroke="#4682B4" stroke-width="1" />
+  
+  <!-- Parking Area Lines -->
+  <rect x="50" y="350" width="20" height="40" fill="#FFFFFF" />
+  <rect x="80" y="350" width="20" height="40" fill="#FFFFFF" />
+  <rect x="110" y="350" width="20" height="40" fill="#FFFFFF" />
+  <rect x="140" y="350" width="20" height="40" fill="#FFFFFF" />
+  
+  <!-- Trees -->
+  <circle cx="30" cy="290" r="15" fill="#228B22" />
+  <rect x="27" y="290" width="6" height="30" fill="#8B4513" />
+  
+  <circle cx="570" cy="290" r="15" fill="#228B22" />
+  <rect x="567" y="290" width="6" height="30" fill="#8B4513" />
+  
+  <!-- Clinic 1 Medical Sign -->
+  <rect x="200" y="240" width="200" height="30" fill="#FFFFFF" stroke="#047857" stroke-width="2" />
+  <text x="300" y="260" text-anchor="middle" fill="#047857" font-family="Arial, sans-serif" font-size="14" font-weight="bold">CLINIC 1 MEDICAL</text>
+  
+  <!-- Address -->
+  <text x="300" y="340" text-anchor="middle" fill="#2C3E50" font-family="Arial, sans-serif" font-size="12">16644-71 St NW, Edmonton, AB</text>
+  
+  <!-- Professional badge -->
+  <circle cx="550" cy="50" r="25" fill="#047857" stroke="#035548" stroke-width="2" />
+  <text x="550" y="47" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">FAMILY</text>
+  <text x="550" y="58" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">CARE</text>
+</svg>

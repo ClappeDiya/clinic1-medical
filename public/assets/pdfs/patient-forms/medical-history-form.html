@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical History Form - Clinic 1 Medical</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 40px; color: #333; }
+        .header { text-align: center; border-bottom: 3px solid #047857; padding-bottom: 20px; margin-bottom: 30px; }
+        .logo { color: #047857; font-size: 24px; font-weight: bold; }
+        .subtitle { color: #6b7280; font-size: 14px; }
+        .form-section { margin: 30px 0; }
+        .form-section h3 { color: #047857; border-bottom: 1px solid #d1d5db; padding-bottom: 5px; }
+        .form-row { display: flex; gap: 20px; margin: 15px 0; }
+        .form-field { flex: 1; }
+        .form-field label { display: block; font-weight: bold; margin-bottom: 5px; }
+        .form-field input, .form-field textarea, .form-field select { 
+            width: 100%; padding: 8px; border: 1px solid #d1d5db; border-radius: 4px; 
+        }
+        .checkbox-group { margin: 10px 0; }
+        .checkbox-group input[type="checkbox"] { margin-right: 10px; }
+        .condition-list { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 15px 0; }
+        .footer { margin-top: 40px; padding-top: 20px; border-top: 2px solid #e5e7eb; font-size: 12px; color: #6b7280; }
+        .medication-table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+        .medication-table th, .medication-table td { border: 1px solid #d1d5db; padding: 8px; text-align: left; }
+        .medication-table th { background-color: #f3f4f6; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">CLINIC 1 MEDICAL</div>
+        <div class="subtitle">Royal Centre • 16644-71 St NW, Edmonton, AB T5Z 0N5</div>
+        <h2>MEDICAL HISTORY FORM</h2>
+    </div>
+
+    <div class="form-section">
+        <h3>Patient Information</h3>
+        <div class="form-row">
+            <div class="form-field">
+                <label>Patient Name: *</label>
+                <input type="text" name="patient_name" required>
+            </div>
+            <div class="form-field">
+                <label>Date of Birth: *</label>
+                <input type="date" name="date_of_birth" required>
+            </div>
+            <div class="form-field">
+                <label>Date Completed: *</label>
+                <input type="date" name="date_completed" required>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-section">
+        <h3>Current Medications</h3>
+        <p><em>Please list ALL medications you are currently taking, including prescription, over-the-counter, vitamins, and supplements.</em></p>
+        
+        <table class="medication-table">
+            <thead>
+                <tr>
+                    <th>Medication Name</th>
+                    <th>Dosage/Strength</th>
+                    <th>Frequency</th>
+                    <th>Prescribing Doctor</th>
+                    <th>Reason for Taking</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="text" name="med_name_1"></td>
+                    <td><input type="text" name="med_dose_1"></td>
+                    <td><input type="text" name="med_freq_1"></td>
+                    <td><input type="text" name="med_doctor_1"></td>
+                    <td><input type="text" name="med_reason_1"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="med_name_2"></td>
+                    <td><input type="text" name="med_dose_2"></td>
+                    <td><input type="text" name="med_freq_2"></td>
+                    <td><input type="text" name="med_doctor_2"></td>
+                    <td><input type="text" name="med_reason_2"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="med_name_3"></td>
+                    <td><input type="text" name="med_dose_3"></td>
+                    <td><input type="text" name="med_freq_3"></td>
+                    <td><input type="text" name="med_doctor_3"></td>
+                    <td><input type="text" name="med_reason_3"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="med_name_4"></td>
+                    <td><input type="text" name="med_dose_4"></td>
+                    <td><input type="text" name="med_freq_4"></td>
+                    <td><input type="text" name="med_doctor_4"></td>
+                    <td><input type="text" name="med_reason_4"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="med_name_5"></td>
+                    <td><input type="text" name="med_dose_5"></td>
+                    <td><input type="text" name="med_freq_5"></td>
+                    <td><input type="text" name="med_doctor_5"></td>
+                    <td><input type="text" name="med_reason_5"></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="checkbox-group">
+            <label>
+                <input type="checkbox" name="no_current_medications" value="yes">
+                I am not currently taking any medications
+            </label>
+        </div>
+    </div>
+
+    <div class="form-section">
+        <h3>Allergies and Adverse Reactions</h3>
+        <div class="form-row">
+            <div class="form-field">
+                <label>Drug Allergies (list medication and reaction):</label>
+                <textarea name="drug_allergies" rows="4" placeholder="Medication name - Type of reaction"></textarea>
+            </div>
+        </div>
+        
+        <div class="form-row">
+            <div class="form-field">
+                <label>Environmental Allergies (pollen, dust, etc.):</label>
+                <textarea name="environmental_allergies" rows="3"></textarea>
+            </div>
+        </div>
+        
+        <div class="form-row">
+            <div class="form-field">
+                <label>Food Allergies:</label>
+                <textarea name="food_allergies" rows="3"></textarea>
+            </div>
+        </div>
+        
+        <div class="checkbox-group">
+            <label>
+                <input type="checkbox" name="no_known_allergies" value="yes">
+                No known allergies
+            </label>
+        </div>
+    </div>
+
+    <div class="form-section">
+        <h3>Past Medical History</h3>
+        <p><em>Please check all conditions you have been diagnosed with:</em></p>
+        
+        <div class="condition-list">
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="condition_diabetes" value="yes"> Diabetes</label>
+            </div>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="condition_hypertension" value="yes"> High Blood Pressure</label>
+            </div>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="condition_heart_disease" value="yes"> Heart Disease</label>
+            </div>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="condition_stroke" value="yes"> Stroke</label>
+            </div>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="condition_cancer" value="yes"> Cancer</label>
+            </div>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="condition_asthma" value="yes"> Asthma</label>
+            </div>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="condition_copd" value="yes"> COPD</label>
+            </div>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="condition_depression" value="yes"> Depression</label>
+            </div>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="condition_anxiety" value="yes"> Anxiety</label>
+            </div>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="condition_arthritis" value="yes"> Arthritis</label>
+            </div>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="condition_osteoporosis" value="yes"> Osteoporosis</label>
+            </div>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="condition_thyroid" value="yes"> Thyroid Problems</label>
+            </div>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="condition_kidney" value="yes"> Kidney Disease</label>
+            </div>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="condition_liver" value="yes"> Liver Disease</label>
+            </div>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="condition_seizure" value="yes"> Seizure Disorder</label>
+            </div>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="condition_migraine" value="yes"> Migraines</label>
+            </div>
+        </div>
+        
+        <div class="form-row">
+            <div class="form-field">
+                <label>Other Medical Conditions (not listed above):</label>
+                <textarea name="other_conditions" rows="3"></textarea>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-section">
+        <h3>Surgical History</h3>
+        <div class="form-row">
+            <div class="form-field">
+                <label>Previous Surgeries (include type, date, and hospital):</label>
+                <textarea name="surgical_history" rows="4" placeholder="Surgery type - Date - Hospital/Location"></textarea>
+            </div>
+        </div>
+        
+        <div class="checkbox-group">
+            <label>
+                <input type="checkbox" name="no_surgeries" value="yes">
+                No previous surgeries
+            </label>
+        </div>
+    </div>
+
+    <div class="form-section">
+        <h3>Family Medical History</h3>
+        <p><em>Please indicate if any immediate family members (parents, siblings, children) have had the following conditions:</em></p>
+        
+        <div class="condition-list">
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="family_heart_disease" value="yes"> Heart Disease</label>
+            </div>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="family_stroke" value="yes"> Stroke</label>
+            </div>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="family_diabetes" value="yes"> Diabetes</label>
+            </div>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="family_hypertension" value="yes"> High Blood Pressure</label>
+            </div>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="family_cancer" value="yes"> Cancer</label>
+            </div>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="family_mental_health" value="yes"> Mental Health Disorders</label>
+            </div>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="family_kidney_disease" value="yes"> Kidney Disease</label>
+            </div>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="family_osteoporosis" value="yes"> Osteoporosis</label>
+            </div>
+        </div>
+        
+        <div class="form-row">
+            <div class="form-field">
+                <label>Other significant family medical history:</label>
+                <textarea name="other_family_history" rows="3"></textarea>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-section">
+        <h3>Social History</h3>
+        <div class="form-row">
+            <div class="form-field">
+                <label>Tobacco Use:</label>
+                <select name="tobacco_use">
+                    <option value="">Select</option>
+                    <option value="never">Never</option>
+                    <option value="current">Current smoker</option>
+                    <option value="former">Former smoker</option>
+                </select>
+            </div>
+            <div class="form-field">
+                <label>If current/former, packs per day and years:</label>
+                <input type="text" name="tobacco_details">
+            </div>
+        </div>
+        
+        <div class="form-row">
+            <div class="form-field">
+                <label>Alcohol Use:</label>
+                <select name="alcohol_use">
+                    <option value="">Select</option>
+                    <option value="none">None</option>
+                    <option value="occasional">Occasional (1-2 drinks/week)</option>
+                    <option value="moderate">Moderate (3-7 drinks/week)</option>
+                    <option value="heavy">Heavy (>7 drinks/week)</option>
+                </select>
+            </div>
+            <div class="form-field">
+                <label>Exercise Frequency:</label>
+                <select name="exercise">
+                    <option value="">Select</option>
+                    <option value="none">None</option>
+                    <option value="occasional">1-2 times/week</option>
+                    <option value="regular">3-4 times/week</option>
+                    <option value="frequent">5+ times/week</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="form-row">
+            <div class="form-field">
+                <label>Occupation:</label>
+                <input type="text" name="occupation">
+            </div>
+            <div class="form-field">
+                <label>Occupational Hazards/Exposures:</label>
+                <input type="text" name="occupational_hazards">
+            </div>
+        </div>
+    </div>
+
+    <div class="form-section">
+        <h3>Women's Health (if applicable)</h3>
+        <div class="form-row">
+            <div class="form-field">
+                <label>Last menstrual period:</label>
+                <input type="date" name="last_menstrual_period">
+            </div>
+            <div class="form-field">
+                <label>Number of pregnancies:</label>
+                <input type="number" name="pregnancies" min="0">
+            </div>
+            <div class="form-field">
+                <label>Number of live births:</label>
+                <input type="number" name="live_births" min="0">
+            </div>
+        </div>
+        
+        <div class="form-row">
+            <div class="form-field">
+                <label>Last Pap smear:</label>
+                <input type="date" name="last_pap_smear">
+            </div>
+            <div class="form-field">
+                <label>Last mammogram:</label>
+                <input type="date" name="last_mammogram">
+            </div>
+        </div>
+    </div>
+
+    <div class="form-section">
+        <h3>Current Symptoms or Concerns</h3>
+        <div class="form-row">
+            <div class="form-field">
+                <label>Primary reason for today's visit:</label>
+                <textarea name="primary_concern" rows="4"></textarea>
+            </div>
+        </div>
+        
+        <div class="form-row">
+            <div class="form-field">
+                <label>Other symptoms or health concerns:</label>
+                <textarea name="other_concerns" rows="4"></textarea>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-section">
+        <h3>Acknowledgment</h3>
+        <div class="checkbox-group">
+            <label>
+                <input type="checkbox" name="information_accurate" value="yes" required>
+                I certify that the information provided is accurate and complete to the best of my knowledge. *
+            </label>
+        </div>
+        <div class="checkbox-group">
+            <label>
+                <input type="checkbox" name="update_information" value="yes" required>
+                I agree to inform the clinic of any changes to this information. *
+            </label>
+        </div>
+    </div>
+
+    <div class="form-row" style="margin-top: 30px;">
+        <div class="form-field">
+            <label>Patient Signature:</label>
+            <div style="border-bottom: 1px solid #000; min-height: 40px; margin: 10px 0;"></div>
+        </div>
+        <div class="form-field">
+            <label>Date: *</label>
+            <input type="date" name="signature_date" required>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p><strong>CLINIC 1 MEDICAL</strong> - Royal Centre, 16644-71 St NW, Edmonton, AB T5Z 0N5</p>
+        <p>Phone: (780) 761-2430 | Text: (587) 926-7747 | Hours: Mon-Fri 9:00 AM - 5:00 PM</p>
+        <p><em>Please complete this form thoroughly and bring it to your appointment. 
+        This information helps us provide you with the best possible care.</em></p>
+        <p><small>Medical History Form - Updated: 2024. All information is confidential and protected under privacy legislation.</small></p>
+    </div>
+</body>
+</html>

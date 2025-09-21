@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Information Form - Clinic 1 Medical</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 40px; color: #333; }
+        .header { text-align: center; border-bottom: 3px solid #047857; padding-bottom: 20px; margin-bottom: 30px; }
+        .logo { color: #047857; font-size: 24px; font-weight: bold; }
+        .subtitle { color: #6b7280; font-size: 14px; }
+        .form-section { margin: 30px 0; }
+        .form-section h3 { color: #047857; border-bottom: 1px solid #d1d5db; padding-bottom: 5px; }
+        .form-row { display: flex; gap: 20px; margin: 15px 0; }
+        .form-field { flex: 1; }
+        .form-field label { display: block; font-weight: bold; margin-bottom: 5px; }
+        .form-field input, .form-field textarea, .form-field select { 
+            width: 100%; padding: 8px; border: 1px solid #d1d5db; border-radius: 4px; 
+        }
+        .checkbox-group { margin: 10px 0; }
+        .checkbox-group input[type="checkbox"] { margin-right: 10px; }
+        .footer { margin-top: 40px; padding-top: 20px; border-top: 2px solid #e5e7eb; font-size: 12px; color: #6b7280; }
+        .important-note { background-color: #fef3c7; border-left: 4px solid #f59e0b; padding: 15px; margin: 20px 0; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">CLINIC 1 MEDICAL</div>
+        <div class="subtitle">Royal Centre • 16644-71 St NW, Edmonton, AB T5Z 0N5</div>
+        <h2>INSURANCE INFORMATION FORM</h2>
+    </div>
+
+    <div class="important-note">
+        <strong>⚠️ IMPORTANT:</strong> Please bring a copy of your health card and any insurance cards with you to your appointment. 
+        This form helps us verify your coverage and submit claims accurately.
+    </div>
+
+    <div class="form-section">
+        <h3>Patient Information</h3>
+        <div class="form-row">
+            <div class="form-field">
+                <label>Patient Name: *</label>
+                <input type="text" name="patient_name" required>
+            </div>
+            <div class="form-field">
+                <label>Date of Birth: *</label>
+                <input type="date" name="date_of_birth" required>
+            </div>
+            <div class="form-field">
+                <label>Date: *</label>
+                <input type="date" name="form_date" required>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-section">
+        <h3>Alberta Health Care Coverage</h3>
+        <div class="form-row">
+            <div class="form-field">
+                <label>Alberta Health Care Number: *</label>
+                <input type="text" name="alberta_health_number" required placeholder="9 digits">
+            </div>
+            <div class="form-field">
+                <label>Version Code:</label>
+                <input type="text" name="version_code" placeholder="2 letters">
+            </div>
+            <div class="form-field">
+                <label>Expiry Date:</label>
+                <input type="date" name="alberta_health_expiry">
+            </div>
+        </div>
+        
+        <div class="checkbox-group">
+            <label>
+                <input type="checkbox" name="alberta_health_active" value="yes" required>
+                I confirm my Alberta Health Card is current and active *
+            </label>
+        </div>
+        
+        <div class="checkbox-group">
+            <label>
+                <input type="checkbox" name="new_to_alberta" value="yes">
+                I am new to Alberta (moved from another province/territory)
+            </label>
+        </div>
+        
+        <div class="form-row">
+            <div class="form-field">
+                <label>If new to Alberta, previous province/territory:</label>
+                <input type="text" name="previous_province">
+            </div>
+            <div class="form-field">
+                <label>Date moved to Alberta:</label>
+                <input type="date" name="alberta_move_date">
+            </div>
+        </div>
+    </div>
+
+    <div class="form-section">
+        <h3>Extended Health Benefits</h3>
+        <div class="checkbox-group">
+            <label>
+                <input type="checkbox" name="has_extended_benefits" value="yes">
+                I have extended health benefits/insurance coverage
+            </label>
+        </div>
+        
+        <div class="form-row">
+            <div class="form-field">
+                <label>Insurance Company Name:</label>
+                <input type="text" name="insurance_company">
+            </div>
+            <div class="form-field">
+                <label>Policy/Group Number:</label>
+                <input type="text" name="policy_number">
+            </div>
+        </div>
+        
+        <div class="form-row">
+            <div class="form-field">
+                <label>Certificate/ID Number:</label>
+                <input type="text" name="certificate_number">
+            </div>
+            <div class="form-field">
+                <label>Effective Date:</label>
+                <input type="date" name="coverage_effective_date">
+            </div>
+        </div>
+    </div>
+
+    <div class="form-section">
+        <h3>Primary Policyholder Information</h3>
+        <p><em>(Complete if patient is not the primary policyholder)</em></p>
+        
+        <div class="form-row">
+            <div class="form-field">
+                <label>Primary Policyholder Name:</label>
+                <input type="text" name="policyholder_name">
+            </div>
+            <div class="form-field">
+                <label>Date of Birth:</label>
+                <input type="date" name="policyholder_dob">
+            </div>
+        </div>
+        
+        <div class="form-row">
+            <div class="form-field">
+                <label>Relationship to Patient:</label>
+                <select name="relationship">
+                    <option value="">Select</option>
+                    <option value="spouse">Spouse</option>
+                    <option value="parent">Parent</option>
+                    <option value="child">Child</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-field">
+                <label>Employer/Plan Sponsor:</label>
+                <input type="text" name="employer">
+            </div>
+        </div>
+        
+        <div class="form-row">
+            <div class="form-field">
+                <label>Policyholder Social Insurance Number:</label>
+                <input type="text" name="policyholder_sin" placeholder="XXX-XXX-XXX">
+            </div>
+        </div>
+    </div>
+
+    <div class="form-section">
+        <h3>Coverage Details</h3>
+        <div class="checkbox-group">
+            <label>
+                <input type="checkbox" name="coverage_prescriptions" value="yes">
+                Prescription Drug Coverage
+            </label>
+        </div>
+        <div class="checkbox-group">
+            <label>
+                <input type="checkbox" name="coverage_vision" value="yes">
+                Vision Care Coverage
+            </label>
+        </div>
+        <div class="checkbox-group">
+            <label>
+                <input type="checkbox" name="coverage_dental" value="yes">
+                Dental Coverage
+            </label>
+        </div>
+        <div class="checkbox-group">
+            <label>
+                <input type="checkbox" name="coverage_physiotherapy" value="yes">
+                Physiotherapy/Massage Coverage
+            </label>
+        </div>
+        <div class="checkbox-group">
+            <label>
+                <input type="checkbox" name="coverage_medical_equipment" value="yes">
+                Medical Equipment Coverage
+            </label>
+        </div>
+        <div class="checkbox-group">
+            <label>
+                <input type="checkbox" name="coverage_ambulance" value="yes">
+                Ambulance Coverage
+            </label>
+        </div>
+        
+        <div class="form-row">
+            <div class="form-field">
+                <label>Annual Deductible Amount:</label>
+                <input type="text" name="deductible_amount" placeholder="$0.00">
+            </div>
+            <div class="form-field">
+                <label>Co-payment Percentage:</label>
+                <input type="text" name="copay_percentage" placeholder="e.g., 80%">
+            </div>
+        </div>
+    </div>
+
+    <div class="form-section">
+        <h3>Motor Vehicle Accident (MVA) Information</h3>
+        <div class="checkbox-group">
+            <label>
+                <input type="checkbox" name="mva_related" value="yes">
+                This visit is related to a motor vehicle accident
+            </label>
+        </div>
+        
+        <div class="form-row">
+            <div class="form-field">
+                <label>Date of Accident:</label>
+                <input type="date" name="accident_date">
+            </div>
+            <div class="form-field">
+                <label>Claim Number:</label>
+                <input type="text" name="mva_claim_number">
+            </div>
+        </div>
+        
+        <div class="form-row">
+            <div class="form-field">
+                <label>Insurance Company (MVA):</label>
+                <input type="text" name="mva_insurance_company">
+            </div>
+            <div class="form-field">
+                <label>Adjuster Name:</label>
+                <input type="text" name="adjuster_name">
+            </div>
+        </div>
+    </div>
+
+    <div class="form-section">
+        <h3>Workers' Compensation</h3>
+        <div class="checkbox-group">
+            <label>
+                <input type="checkbox" name="wcb_related" value="yes">
+                This visit is related to a workplace injury
+            </label>
+        </div>
+        
+        <div class="form-row">
+            <div class="form-field">
+                <label>Date of Injury:</label>
+                <input type="date" name="injury_date">
+            </div>
+            <div class="form-field">
+                <label>WCB Claim Number:</label>
+                <input type="text" name="wcb_claim_number">
+            </div>
+        </div>
+        
+        <div class="form-row">
+            <div class="form-field">
+                <label>Employer at Time of Injury:</label>
+                <input type="text" name="injury_employer">
+            </div>
+        </div>
+    </div>
+
+    <div class="form-section">
+        <h3>Billing Authorization</h3>
+        <div class="checkbox-group">
+            <label>
+                <input type="checkbox" name="authorize_direct_billing" value="yes">
+                I authorize Clinic 1 Medical to bill my insurance company directly for covered services
+            </label>
+        </div>
+        <div class="checkbox-group">
+            <label>
+                <input type="checkbox" name="authorize_alberta_health" value="yes" required>
+                I authorize Clinic 1 Medical to bill Alberta Health Care for insured services *
+            </label>
+        </div>
+        <div class="checkbox-group">
+            <label>
+                <input type="checkbox" name="responsible_for_payment" value="yes" required>
+                I understand that I am responsible for any charges not covered by insurance *
+            </label>
+        </div>
+        <div class="checkbox-group">
+            <label>
+                <input type="checkbox" name="notify_changes" value="yes" required>
+                I will notify the clinic immediately of any changes to my insurance coverage *
+            </label>
+        </div>
+    </div>
+
+    <div class="form-section">
+        <h3>Payment Information</h3>
+        <div class="form-row">
+            <div class="form-field">
+                <label>Preferred Payment Method for Non-Covered Services:</label>
+                <select name="payment_method">
+                    <option value="">Select</option>
+                    <option value="credit_card">Credit Card</option>
+                    <option value="debit_card">Debit Card</option>
+                    <option value="cash">Cash</option>
+                    <option value="cheque">Cheque</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="checkbox-group">
+            <label>
+                <input type="checkbox" name="receipt_email" value="yes">
+                Email receipts to me for insurance reimbursement
+            </label>
+        </div>
+        
+        <div class="form-row">
+            <div class="form-field">
+                <label>Email for Receipts:</label>
+                <input type="email" name="receipt_email_address">
+            </div>
+        </div>
+    </div>
+
+    <div class="form-section">
+        <h3>Additional Information</h3>
+        <div class="form-row">
+            <div class="form-field">
+                <label>Special instructions or notes about your coverage:</label>
+                <textarea name="coverage_notes" rows="3"></textarea>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-section">
+        <h3>Acknowledgment and Consent</h3>
+        <div class="checkbox-group">
+            <label>
+                <input type="checkbox" name="information_accurate" value="yes" required>
+                I certify that the information provided is accurate and complete *
+            </label>
+        </div>
+        <div class="checkbox-group">
+            <label>
+                <input type="checkbox" name="understand_responsibility" value="yes" required>
+                I understand my financial responsibility for services rendered *
+            </label>
+        </div>
+        <div class="checkbox-group">
+            <label>
+                <input type="checkbox" name="privacy_consent" value="yes" required>
+                I consent to the use and disclosure of my personal health information for billing purposes *
+            </label>
+        </div>
+    </div>
+
+    <div class="form-row" style="margin-top: 30px;">
+        <div class="form-field">
+            <label>Patient/Guardian Signature:</label>
+            <div style="border-bottom: 1px solid #000; min-height: 40px; margin: 10px 0;"></div>
+        </div>
+        <div class="form-field">
+            <label>Date: *</label>
+            <input type="date" name="signature_date" required>
+        </div>
+    </div>
+
+    <div class="form-section">
+        <h3>Office Use Only</h3>
+        <div class="form-row">
+            <div class="form-field">
+                <label>Health Card Verified:</label>
+                <select name="health_card_verified">
+                    <option value="">Select</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                    <option value="expired">Expired</option>
+                </select>
+            </div>
+            <div class="form-field">
+                <label>Insurance Card Copied:</label>
+                <select name="insurance_copied">
+                    <option value="">Select</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                    <option value="na">N/A</option>
+                </select>
+            </div>
+            <div class="form-field">
+                <label>Staff Initials:</label>
+                <input type="text" name="staff_initials">
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p><strong>CLINIC 1 MEDICAL</strong> - Royal Centre, 16644-71 St NW, Edmonton, AB T5Z 0N5</p>
+        <p>Phone: (780) 761-2430 | Text: (587) 926-7747 | Hours: Mon-Fri 9:00 AM - 5:00 PM</p>
+        <p><em>Please complete this form and bring your health card and insurance cards to your appointment. 
+        We will verify your coverage and keep copies on file.</em></p>
+        <p><small>Insurance Information Form - Updated: 2024. All information is confidential and used only for billing purposes.</small></p>
+    </div>
+</body>
+</html>

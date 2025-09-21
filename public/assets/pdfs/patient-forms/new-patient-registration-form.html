@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Patient Registration Form - Clinic 1 Medical</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 40px; color: #333; }
+        .header { text-align: center; border-bottom: 3px solid #047857; padding-bottom: 20px; margin-bottom: 30px; }
+        .logo { color: #047857; font-size: 24px; font-weight: bold; }
+        .subtitle { color: #6b7280; font-size: 14px; }
+        .form-section { margin: 30px 0; }
+        .form-section h3 { color: #047857; border-bottom: 1px solid #d1d5db; padding-bottom: 5px; }
+        .form-row { display: flex; gap: 20px; margin: 15px 0; }
+        .form-field { flex: 1; }
+        .form-field label { display: block; font-weight: bold; margin-bottom: 5px; }
+        .form-field input, .form-field textarea, .form-field select { 
+            width: 100%; padding: 8px; border: 1px solid #d1d5db; border-radius: 4px; 
+        }
+        .checkbox-group { margin: 10px 0; }
+        .checkbox-group input[type="checkbox"] { margin-right: 10px; }
+        .footer { margin-top: 40px; padding-top: 20px; border-top: 2px solid #e5e7eb; font-size: 12px; color: #6b7280; }
+        .signature-section { display: flex; gap: 20px; margin: 30px 0; }
+        .signature-box { flex: 1; border-bottom: 1px solid #000; min-height: 40px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">CLINIC 1 MEDICAL</div>
+        <div class="subtitle">Royal Centre • 16644-71 St NW, Edmonton, AB T5Z 0N5</div>
+        <h2>NEW PATIENT REGISTRATION FORM</h2>
+    </div>
+
+    <div class="form-section">
+        <h3>Patient Information</h3>
+        <div class="form-row">
+            <div class="form-field">
+                <label>First Name: *</label>
+                <input type="text" name="first_name" required>
+            </div>
+            <div class="form-field">
+                <label>Last Name: *</label>
+                <input type="text" name="last_name" required>
+            </div>
+            <div class="form-field">
+                <label>Date of Birth: *</label>
+                <input type="date" name="date_of_birth" required>
+            </div>
+        </div>
+        
+        <div class="form-row">
+            <div class="form-field">
+                <label>Gender:</label>
+                <select name="gender">
+                    <option value="">Select</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                    <option value="prefer_not_to_say">Prefer not to say</option>
+                </select>
+            </div>
+            <div class="form-field">
+                <label>Marital Status:</label>
+                <select name="marital_status">
+                    <option value="">Select</option>
+                    <option value="single">Single</option>
+                    <option value="married">Married</option>
+                    <option value="divorced">Divorced</option>
+                    <option value="widowed">Widowed</option>
+                </select>
+            </div>
+            <div class="form-field">
+                <label>Preferred Language:</label>
+                <input type="text" name="preferred_language" placeholder="English">
+            </div>
+        </div>
+    </div>
+
+    <div class="form-section">
+        <h3>Contact Information</h3>
+        <div class="form-row">
+            <div class="form-field">
+                <label>Home Phone:</label>
+                <input type="tel" name="home_phone">
+            </div>
+            <div class="form-field">
+                <label>Cell Phone: *</label>
+                <input type="tel" name="cell_phone" required>
+            </div>
+            <div class="form-field">
+                <label>Email Address:</label>
+                <input type="email" name="email">
+            </div>
+        </div>
+        
+        <div class="form-row">
+            <div class="form-field">
+                <label>Street Address: *</label>
+                <input type="text" name="street_address" required>
+            </div>
+        </div>
+        
+        <div class="form-row">
+            <div class="form-field">
+                <label>City: *</label>
+                <input type="text" name="city" required>
+            </div>
+            <div class="form-field">
+                <label>Province: *</label>
+                <select name="province" required>
+                    <option value="">Select</option>
+                    <option value="AB" selected>Alberta</option>
+                    <option value="BC">British Columbia</option>
+                    <option value="MB">Manitoba</option>
+                    <option value="NB">New Brunswick</option>
+                    <option value="NL">Newfoundland and Labrador</option>
+                    <option value="NT">Northwest Territories</option>
+                    <option value="NS">Nova Scotia</option>
+                    <option value="NU">Nunavut</option>
+                    <option value="ON">Ontario</option>
+                    <option value="PE">Prince Edward Island</option>
+                    <option value="QC">Quebec</option>
+                    <option value="SK">Saskatchewan</option>
+                    <option value="YT">Yukon</option>
+                </select>
+            </div>
+            <div class="form-field">
+                <label>Postal Code: *</label>
+                <input type="text" name="postal_code" required placeholder="T5Z 0N5">
+            </div>
+        </div>
+    </div>
+
+    <div class="form-section">
+        <h3>Emergency Contact</h3>
+        <div class="form-row">
+            <div class="form-field">
+                <label>Emergency Contact Name: *</label>
+                <input type="text" name="emergency_name" required>
+            </div>
+            <div class="form-field">
+                <label>Relationship: *</label>
+                <input type="text" name="emergency_relationship" required>
+            </div>
+        </div>
+        
+        <div class="form-row">
+            <div class="form-field">
+                <label>Emergency Contact Phone: *</label>
+                <input type="tel" name="emergency_phone" required>
+            </div>
+            <div class="form-field">
+                <label>Alternate Phone:</label>
+                <input type="tel" name="emergency_phone_alt">
+            </div>
+        </div>
+    </div>
+
+    <div class="form-section">
+        <h3>Health Card Information</h3>
+        <div class="form-row">
+            <div class="form-field">
+                <label>Alberta Health Care Number: *</label>
+                <input type="text" name="health_card_number" required>
+            </div>
+            <div class="form-field">
+                <label>Expiry Date:</label>
+                <input type="date" name="health_card_expiry">
+            </div>
+        </div>
+    </div>
+
+    <div class="form-section">
+        <h3>Primary Care Information</h3>
+        <div class="form-row">
+            <div class="form-field">
+                <label>Current Family Doctor (if any):</label>
+                <input type="text" name="current_doctor">
+            </div>
+            <div class="form-field">
+                <label>Clinic/Hospital:</label>
+                <input type="text" name="current_clinic">
+            </div>
+        </div>
+        
+        <div class="form-row">
+            <div class="form-field">
+                <label>Reason for choosing our clinic:</label>
+                <textarea name="reason_for_clinic" rows="3"></textarea>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-section">
+        <h3>Communication Preferences</h3>
+        <div class="checkbox-group">
+            <label>
+                <input type="checkbox" name="communication_phone" value="yes">
+                Phone calls for appointment reminders and results
+            </label>
+        </div>
+        <div class="checkbox-group">
+            <label>
+                <input type="checkbox" name="communication_text" value="yes">
+                Text messages for appointment reminders
+            </label>
+        </div>
+        <div class="checkbox-group">
+            <label>
+                <input type="checkbox" name="communication_email" value="yes">
+                Email for general communication (non-urgent)
+            </label>
+        </div>
+    </div>
+
+    <div class="form-section">
+        <h3>Consent and Authorization</h3>
+        <div class="checkbox-group">
+            <label>
+                <input type="checkbox" name="consent_treatment" value="yes" required>
+                I consent to receive medical treatment at Clinic 1 Medical *
+            </label>
+        </div>
+        <div class="checkbox-group">
+            <label>
+                <input type="checkbox" name="consent_privacy" value="yes" required>
+                I acknowledge that I have read and understand the clinic's privacy policy *
+            </label>
+        </div>
+        <div class="checkbox-group">
+            <label>
+                <input type="checkbox" name="consent_billing" value="yes" required>
+                I authorize the clinic to bill Alberta Health Care or my insurance provider *
+            </label>
+        </div>
+    </div>
+
+    <div class="signature-section">
+        <div>
+            <label>Patient Signature: *</label>
+            <div class="signature-box"></div>
+        </div>
+        <div>
+            <label>Date: *</label>
+            <input type="date" name="signature_date" required>
+        </div>
+    </div>
+
+    <div class="form-section">
+        <h3>Office Use Only</h3>
+        <div class="form-row">
+            <div class="form-field">
+                <label>Chart Number:</label>
+                <input type="text" name="chart_number">
+            </div>
+            <div class="form-field">
+                <label>Date Received:</label>
+                <input type="date" name="date_received">
+            </div>
+            <div class="form-field">
+                <label>Staff Initials:</label>
+                <input type="text" name="staff_initials">
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p><strong>CLINIC 1 MEDICAL</strong> - Royal Centre, 16644-71 St NW, Edmonton, AB T5Z 0N5</p>
+        <p>Phone: (780) 761-2430 | Text: (587) 926-7747 | Hours: Mon-Fri 9:00 AM - 5:00 PM</p>
+        <p><em>Please complete this form thoroughly and bring it to your first appointment. 
+        Fields marked with * are required.</em></p>
+        <p><small>Form updated: 2024. For office use: Please ensure all required fields are completed before processing.</small></p>
+    </div>
+</body>
+</html>
