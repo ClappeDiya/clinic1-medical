@@ -37,7 +37,7 @@ export default function PrivacyPolicyPage() {
                 <h2 className="text-lg font-semibold text-gray-900">Quick Summary for Easy Understanding</h2>
                 <p className="text-gray-700">
                   At Clinic 1 Medical, we keep your health information private and safe. We only use your information to help take care of you,
-                  and we never share it with anyone unless the law says we have to, or you tell us it's okay. This policy explains everything
+                  and we never share it with anyone unless the law says we have to, or you tell us it&apos;s okay. This policy explains everything
                   in simple terms that anyone can understand.
                 </p>
               </div>
@@ -101,7 +101,7 @@ export default function PrivacyPolicyPage() {
                       <h4 className="font-semibold text-gray-900 mb-2">Health Information</h4>
                       <ul className="space-y-1 text-gray-700">
                         <li>• Your medical history and current health conditions</li>
-                        <li>• Medications you're taking</li>
+                        <li>• Medications you&apos;re taking</li>
                         <li>• Test results and x-rays</li>
                         <li>• Notes from your doctor visits</li>
                         <li>• Allergies and immunization records</li>
@@ -123,7 +123,7 @@ export default function PrivacyPolicyPage() {
                 <div className="bg-emerald-50 p-4 rounded-lg">
                   <p className="text-sm text-emerald-800">
                     <strong>Remember:</strong> We only collect information that helps us take better care of you. We never collect
-                    information we don't need.
+                    information we don&apos;t need.
                   </p>
                 </div>
               </CardContent>
@@ -204,7 +204,7 @@ export default function PrivacyPolicyPage() {
                   <div className="border-l-4 border-green-500 pl-4 py-2">
                     <h4 className="font-semibold text-gray-900">With Your Permission</h4>
                     <p className="text-gray-700 mt-1">
-                      We share your information with other doctors, specialists, or family members only when you tell us it's okay.
+                      We share your information with other doctors, specialists, or family members only when you tell us it&apos;s okay.
                     </p>
                   </div>
 
@@ -226,7 +226,7 @@ export default function PrivacyPolicyPage() {
                   <div className="border-l-4 border-orange-500 pl-4 py-2">
                     <h4 className="font-semibold text-gray-900">In Emergencies</h4>
                     <p className="text-gray-700 mt-1">
-                      If you have a medical emergency and can't speak for yourself, we may share information to save your life.
+                      If you have a medical emergency and can&apos;t speak for yourself, we may share information to save your life.
                     </p>
                   </div>
                 </div>
@@ -319,7 +319,7 @@ export default function PrivacyPolicyPage() {
                   {[
                     {
                       right: "Right to See Your Records",
-                      description: "You can ask to see your medical records anytime. We'll show them to you or give you copies.",
+                      description: "You can ask to see your medical records anytime. We&apos;ll show them to you or give you copies.",
                       how: "Submit a written request at our front desk or call us at 780-761-2430"
                     },
                     {
@@ -329,8 +329,8 @@ export default function PrivacyPolicyPage() {
                     },
                     {
                       right: "Right to Know Who Saw Your Information",
-                      description: "You can ask for a list of who we've shared your information with.",
-                      how: "Request an 'accounting of disclosures' in writing"
+                      description: "You can ask for a list of who we&apos;ve shared your information with.",
+                      how: "Request an &apos;accounting of disclosures&apos; in writing"
                     },
                     {
                       right: "Right to Limit Sharing",
@@ -344,7 +344,7 @@ export default function PrivacyPolicyPage() {
                     },
                     {
                       right: "Right to File a Complaint",
-                      description: "If you think we haven't protected your privacy, you can file a complaint.",
+                      description: "If you think we haven&apos;t protected your privacy, you can file a complaint.",
                       how: "Contact our Privacy Officer or the Office of the Information and Privacy Commissioner of Alberta"
                     }
                   ].map((item, index) => (
@@ -375,7 +375,7 @@ export default function PrivacyPolicyPage() {
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-2">For Patients Under 18</h4>
                     <p className="text-gray-700">
-                      If you're under 18, your parents or guardians usually have access to your health information. However,
+                      If you&apos;re under 18, your parents or guardians usually have access to your health information. However,
                       in Alberta, mature minors (those who understand their treatment) may have privacy rights. Talk to your
                       doctor if you have questions.
                     </p>
@@ -386,7 +386,7 @@ export default function PrivacyPolicyPage() {
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-2">Online and Electronic Communications</h4>
                     <p className="text-gray-700">
-                      When you email or text us, remember that these aren't always secure. We recommend:
+                      When you email or text us, remember that these aren&apos;t always secure. We recommend:
                     </p>
                     <ul className="mt-2 space-y-1 text-gray-700 ml-4">
                       <li>• Not sending sensitive health details by regular email</li>
@@ -419,8 +419,8 @@ export default function PrivacyPolicyPage() {
               </CardHeader>
               <CardContent className="pt-6">
                 <p className="text-gray-700 mb-6">
-                  If you have any questions about this privacy policy or how we handle your information, please don't hesitate
-                  to contact us. We're here to help!
+                  If you have any questions about this privacy policy or how we handle your information, please don&apos;t hesitate
+                  to contact us. We&apos;re here to help!
                 </p>
 
                 <div className="bg-white p-6 rounded-lg border border-emerald-200">
@@ -456,7 +456,7 @@ export default function PrivacyPolicyPage() {
                 <div className="mt-6 p-4 bg-yellow-50 rounded-lg border border-yellow-200">
                   <h4 className="font-semibold text-gray-900 mb-2">External Privacy Resources</h4>
                   <p className="text-sm text-gray-700 mb-3">
-                    If you have concerns that we haven't addressed, you can also contact:
+                    If you have concerns that we haven&apos;t addressed, you can also contact:
                   </p>
                   <div className="space-y-2 text-sm">
                     <div>
@@ -480,15 +480,15 @@ export default function PrivacyPolicyPage() {
                   When we make changes:
                 </p>
                 <ul className="space-y-2 text-gray-700 ml-4">
-                  <li>• We'll post the new policy on our website</li>
-                  <li>• We'll update the "Last Updated" date at the top</li>
-                  <li>• For major changes, we'll post a notice in our clinic</li>
+                  <li>• We&apos;ll post the new policy on our website</li>
+                  <li>• We&apos;ll update the &ldquo;Last Updated&rdquo; date at the top</li>
+                  <li>• For major changes, we&apos;ll post a notice in our clinic</li>
                   <li>• You can always ask for a printed copy of the current policy</li>
                 </ul>
                 <div className="bg-emerald-50 p-4 rounded-lg">
                   <p className="text-sm text-emerald-800">
                     <strong>Thank you for trusting Clinic 1 Medical with your healthcare.</strong> Your privacy and trust are
-                    essential to us, and we're committed to protecting your personal information while providing you with the
+                    essential to us, and we&apos;re committed to protecting your personal information while providing you with the
                     best possible medical care.
                   </p>
                 </div>

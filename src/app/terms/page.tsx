@@ -1,7 +1,6 @@
 import { Metadata } from "next"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { ScrollText, Handshake, Calendar, DollarSign, Shield, AlertTriangle, Heart, Phone, Users, CheckCircle, XCircle, Info } from "lucide-react"
-import { Separator } from "@/components/ui/separator"
 
 export const metadata: Metadata = {
   title: "Terms of Service | Clinic 1 Medical",
@@ -38,7 +37,7 @@ export default function TermsOfServicePage() {
                 <p className="text-gray-700">
                   These terms explain how our medical clinic works. Think of it like a friendly agreement between you and us.
                   We promise to take good care of you, and you promise to work with us as a partner in your health.
-                  We'll explain everything in simple words that anyone can understand - no confusing legal language!
+                  We&apos;ll explain everything in simple words that anyone can understand - no confusing legal language!
                 </p>
               </div>
             </div>
@@ -61,14 +60,14 @@ export default function TermsOfServicePage() {
               </CardHeader>
               <CardContent className="pt-6 space-y-4">
                 <p className="text-gray-700 leading-relaxed">
-                  Thank you for choosing Clinic 1 Medical for your healthcare needs. We're located at Royal Center,
+                  Thank you for choosing Clinic 1 Medical for your healthcare needs. We&apos;re located at Royal Center,
                   16644-71 St NW, Edmonton, Alberta T5Z ON5. Our doctors, Dr. Deji Ogundiya and Dr. Collington Akpede,
                   along with our entire team, are committed to providing you with excellent medical care.
                 </p>
                 <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
                   <p className="text-sm text-blue-800">
-                    <strong>What These Terms Mean:</strong> When you come to our clinic or use our services, you're agreeing
-                    to these terms. Don't worry - they're designed to protect both you and us, and ensure everyone gets the
+                    <strong>What These Terms Mean:</strong> When you come to our clinic or use our services, you&apos;re agreeing
+                    to these terms. Don&apos;t worry - they&apos;re designed to protect both you and us, and ensure everyone gets the
                     best possible care.
                   </p>
                 </div>
@@ -115,10 +114,10 @@ export default function TermsOfServicePage() {
                 <div className="bg-yellow-50 p-4 rounded-lg border border-yellow-200">
                   <h4 className="font-semibold text-gray-900 mb-2 flex items-center">
                     <AlertTriangle className="h-5 w-5 text-yellow-600 mr-2" />
-                    What We Don't Provide
+                    What We Don&apos;t Provide
                   </h4>
                   <p className="text-gray-700 text-sm">
-                    We're not an emergency room. If you have a life-threatening emergency, call 911 or go to the nearest
+                    We&apos;re not an emergency room. If you have a life-threatening emergency, call 911 or go to the nearest
                     hospital emergency department immediately. For urgent but non-emergency issues after hours, call Health Link at 811.
                   </p>
                 </div>
@@ -180,12 +179,12 @@ export default function TermsOfServicePage() {
                       {[
                         {
                           title: "Please Arrive on Time",
-                          description: "Try to arrive 10 minutes early for paperwork. If you're more than 15 minutes late, we might need to reschedule.",
+                          description: "Try to arrive 10 minutes early for paperwork. If you&apos;re more than 15 minutes late, we might need to reschedule.",
                           icon: "⏰"
                         },
                         {
                           title: "24-Hour Cancellation Notice",
-                          description: "If you can't make your appointment, please let us know at least 24 hours ahead so someone else can use that time.",
+                          description: "If you can&apos;t make your appointment, please let us know at least 24 hours ahead so someone else can use that time.",
                           icon: "📞"
                         },
                         {
@@ -223,7 +222,7 @@ export default function TermsOfServicePage() {
               </CardHeader>
               <CardContent className="pt-6 space-y-6">
                 <p className="text-gray-700">
-                  Good healthcare is a team effort! Here's how you can help us help you:
+                  Good healthcare is a team effort! Here&apos;s how you can help us help you:
                 </p>
 
                 <div className="space-y-4">
@@ -244,7 +243,7 @@ export default function TermsOfServicePage() {
                         "Take medications as prescribed",
                         "Follow treatment plans we agree on together",
                         "Complete recommended tests and follow-ups",
-                        "Ask questions if you don't understand something"
+                        "Ask questions if you don&apos;t understand something"
                       ],
                       color: "blue"
                     },
@@ -252,7 +251,7 @@ export default function TermsOfServicePage() {
                       category: "Be Respectful",
                       items: [
                         "Treat our staff and other patients with kindness",
-                        "Respect our clinic's property and equipment",
+                        "Respect our clinic&apos;s property and equipment",
                         "Keep your voice down in waiting areas",
                         "Turn off or silence your phone during appointments"
                       ],
@@ -303,39 +302,39 @@ export default function TermsOfServicePage() {
               </CardHeader>
               <CardContent className="pt-6 space-y-6">
                 <p className="text-gray-700">
-                  When you choose Clinic 1 Medical, here's what we promise:
+                  When you choose Clinic 1 Medical, here&apos;s what we promise:
                 </p>
 
                 <div className="grid gap-4">
                   {[
                     {
                       title: "Quality Medical Care",
-                      description: "We'll provide professional, evidence-based medical care following current best practices and guidelines.",
+                      description: "We&apos;ll provide professional, evidence-based medical care following current best practices and guidelines.",
                       icon: "🏥"
                     },
                     {
                       title: "Respect and Dignity",
-                      description: "We'll treat you with respect, maintain your dignity, and never discriminate based on race, religion, gender, age, or any other factor.",
+                      description: "We&apos;ll treat you with respect, maintain your dignity, and never discriminate based on race, religion, gender, age, or any other factor.",
                       icon: "🤝"
                     },
                     {
                       title: "Privacy and Confidentiality",
-                      description: "We'll keep your health information private and only share it according to our privacy policy and the law.",
+                      description: "We&apos;ll keep your health information private and only share it according to our privacy policy and the law.",
                       icon: "🔒"
                     },
                     {
                       title: "Clear Communication",
-                      description: "We'll explain your health conditions and treatment options in words you can understand, and answer your questions.",
+                      description: "We&apos;ll explain your health conditions and treatment options in words you can understand, and answer your questions.",
                       icon: "💬"
                     },
                     {
                       title: "Timely Service",
-                      description: "We'll do our best to see you on time and minimize waiting. If delays occur, we'll keep you informed.",
+                      description: "We&apos;ll do our best to see you on time and minimize waiting. If delays occur, we&apos;ll keep you informed.",
                       icon: "⏱️"
                     },
                     {
                       title: "Safe Environment",
-                      description: "We'll maintain a clean, safe clinic environment and follow all health and safety protocols.",
+                      description: "We&apos;ll maintain a clean, safe clinic environment and follow all health and safety protocols.",
                       icon: "✨"
                     }
                   ].map((item, index) => (
@@ -388,12 +387,12 @@ export default function TermsOfServicePage() {
                       <ul className="space-y-2 text-sm text-gray-700">
                         <li>• Medical notes for work/school</li>
                         <li>• Forms for insurance/employment</li>
-                        <li>• Driver's medical exams</li>
+                        <li>• Driver&apos;s medical exams</li>
                         <li>• Copies of medical records</li>
                         <li>• Missed appointments (no-shows)</li>
                       </ul>
                       <p className="text-xs text-gray-600 mt-3 italic">
-                        * We'll always tell you the cost before providing these services.
+                        * We&apos;ll always tell you the cost before providing these services.
                       </p>
                     </div>
                   </div>
@@ -442,7 +441,7 @@ export default function TermsOfServicePage() {
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-3">Your Medical Records</h3>
                     <p className="text-gray-700 mb-3">
-                      Your medical records contain important information about your health. Here's what you need to know:
+                      Your medical records contain important information about your health. Here&apos;s what you need to know:
                     </p>
                     <ul className="space-y-2 text-gray-700">
                       <li className="flex items-start">
@@ -467,8 +466,8 @@ export default function TermsOfServicePage() {
                   <div className="bg-purple-50 p-4 rounded-lg border border-purple-200">
                     <h4 className="font-semibold text-gray-900 mb-2">Transferring Records</h4>
                     <p className="text-gray-700 text-sm">
-                      If you move or change doctors, we can transfer your records. You'll need to sign a consent form,
-                      and there may be a fee for copying and sending records. We'll keep a copy for our files as required by law.
+                      If you move or change doctors, we can transfer your records. You&apos;ll need to sign a consent form,
+                      and there may be a fee for copying and sending records. We&apos;ll keep a copy for our files as required by law.
                     </p>
                   </div>
                 </div>
@@ -493,7 +492,7 @@ export default function TermsOfServicePage() {
                     {[
                       {
                         title: "Prescription Refills",
-                        description: "Please request refills during appointments or with 48 hours notice. Don't wait until you're completely out of medication.",
+                        description: "Please request refills during appointments or with 48 hours notice. Don&apos;t wait until you&apos;re completely out of medication.",
                         color: "blue"
                       },
                       {
@@ -513,7 +512,7 @@ export default function TermsOfServicePage() {
                       },
                       {
                         title: "Medication Reviews",
-                        description: "We regularly review your medications to ensure they're still right for you. Bring all your medications to appointments.",
+                        description: "We regularly review your medications to ensure they&apos;re still right for you. Bring all your medications to appointments.",
                         color: "purple"
                       }
                     ].map((item, index) => (
@@ -537,7 +536,7 @@ export default function TermsOfServicePage() {
               </CardHeader>
               <CardContent className="pt-6 space-y-6">
                 <p className="text-gray-700">
-                  Sometimes, the relationship between a patient and clinic needs to end. This is rare, but it's important
+                  Sometimes, the relationship between a patient and clinic needs to end. This is rare, but it&apos;s important
                   to understand when and how this might happen:
                 </p>
 
@@ -545,7 +544,7 @@ export default function TermsOfServicePage() {
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-2">You Can Leave Anytime</h4>
                     <p className="text-gray-700 text-sm">
-                      You're always free to choose a different doctor or clinic. Just let us know so we can transfer your records
+                      You&apos;re always free to choose a different doctor or clinic. Just let us know so we can transfer your records
                       if needed.
                     </p>
                   </div>
@@ -555,7 +554,7 @@ export default function TermsOfServicePage() {
                     <div className="bg-red-50 p-4 rounded-lg border border-red-200">
                       <p className="text-gray-700 text-sm mb-2">We may need to end our services if:</p>
                       <ul className="space-y-1 text-sm text-gray-700">
-                        <li>• You're violent, threatening, or abusive to staff or patients</li>
+                        <li>• You&apos;re violent, threatening, or abusive to staff or patients</li>
                         <li>• You repeatedly miss appointments without notice</li>
                         <li>• You forge prescriptions or sell medications</li>
                         <li>• You move outside our service area</li>
@@ -566,8 +565,8 @@ export default function TermsOfServicePage() {
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-2">How It Works</h4>
                     <p className="text-gray-700 text-sm">
-                      If we must end services, we'll give you written notice (usually 30 days) and help you find another doctor.
-                      We'll continue emergency care during this time if needed.
+                      If we must end services, we&apos;ll give you written notice (usually 30 days) and help you find another doctor.
+                      We&apos;ll continue emergency care during this time if needed.
                     </p>
                   </div>
                 </div>
@@ -584,7 +583,7 @@ export default function TermsOfServicePage() {
               </CardHeader>
               <CardContent className="pt-6 space-y-6">
                 <p className="text-gray-700">
-                  We want you to be happy with your care. If something isn't right, please tell us so we can fix it:
+                  We want you to be happy with your care. If something isn&apos;t right, please tell us so we can fix it:
                 </p>
 
                 <div className="space-y-4">
@@ -623,16 +622,16 @@ export default function TermsOfServicePage() {
               <CardContent className="pt-6 space-y-6">
                 <div className="space-y-4">
                   <p className="text-gray-700">
-                    By receiving services at Clinic 1 Medical, you're agreeing that:
+                    By receiving services at Clinic 1 Medical, you&apos;re agreeing that:
                   </p>
 
                   <div className="space-y-3">
                     {[
-                      "You've read and understood these terms (or had them explained to you)",
+                      "You&apos;ve read and understood these terms (or had them explained to you)",
                       "You agree to work with us as a partner in your healthcare",
-                      "You'll provide accurate information about your health",
-                      "You understand that medicine isn't perfect and results can't be guaranteed",
-                      "You'll follow the rules and policies of our clinic",
+                      "You&apos;ll provide accurate information about your health",
+                      "You understand that medicine isn&apos;t perfect and results can&apos;t be guaranteed",
+                      "You&apos;ll follow the rules and policies of our clinic",
                       "You agree to pay for services not covered by Alberta Health Care"
                     ].map((item, index) => (
                       <div key={index} className="flex items-start space-x-3 p-3 bg-green-50 rounded-lg">
@@ -645,7 +644,7 @@ export default function TermsOfServicePage() {
                   <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
                     <h4 className="font-semibold text-gray-900 mb-2">Special Consent Situations</h4>
                     <p className="text-gray-700 text-sm">
-                      Some procedures or treatments need special written consent. We'll always explain these to you and
+                      Some procedures or treatments need special written consent. We&apos;ll always explain these to you and
                       answer your questions before asking you to sign anything.
                     </p>
                   </div>
@@ -674,7 +673,7 @@ export default function TermsOfServicePage() {
                     <h4 className="font-semibold text-gray-900 mb-2">Limitation of Liability</h4>
                     <p className="text-gray-700 text-sm">
                       While we provide professional medical care following best practices, medicine involves uncertainties.
-                      We cannot guarantee specific outcomes. Our liability is limited to what's allowed under Alberta law
+                      We cannot guarantee specific outcomes. Our liability is limited to what&apos;s allowed under Alberta law
                       and our professional insurance.
                     </p>
                   </div>
@@ -682,8 +681,8 @@ export default function TermsOfServicePage() {
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-2">No Warranties</h4>
                     <p className="text-gray-700 text-sm">
-                      Medical treatment is provided "as is" based on current medical knowledge. We don't guarantee that
-                      treatment will cure or improve any condition, though we'll always do our best.
+                      Medical treatment is provided &ldquo;as is&rdquo; based on current medical knowledge. We don&apos;t guarantee that
+                      treatment will cure or improve any condition, though we&apos;ll always do our best.
                     </p>
                   </div>
 
@@ -768,15 +767,15 @@ export default function TermsOfServicePage() {
                 <ul className="space-y-2 text-gray-700">
                   <li className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5" />
-                    <span>We'll post the updated terms on our website</span>
+                    <span>We&apos;ll post the updated terms on our website</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5" />
-                    <span>We'll update the "Last Updated" date at the top</span>
+                    <span>We&apos;ll update the &ldquo;Last Updated&rdquo; date at the top</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5" />
-                    <span>For major changes, we'll post notices in our clinic</span>
+                    <span>For major changes, we&apos;ll post notices in our clinic</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5" />
@@ -785,8 +784,8 @@ export default function TermsOfServicePage() {
                 </ul>
                 <div className="bg-blue-50 p-4 rounded-lg">
                   <p className="text-sm text-blue-800">
-                    <strong>Your Rights:</strong> If you don't agree with changes to our terms, you can choose to find
-                    another healthcare provider. We'll help transfer your records as needed.
+                    <strong>Your Rights:</strong> If you don&apos;t agree with changes to our terms, you can choose to find
+                    another healthcare provider. We&apos;ll help transfer your records as needed.
                   </p>
                 </div>
               </CardContent>

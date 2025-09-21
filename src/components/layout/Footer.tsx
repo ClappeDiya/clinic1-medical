@@ -52,7 +52,7 @@ export default function Footer() {
               <span className="text-emerald-100">Chronic Disease Management</span>
               <span className="text-emerald-100">Physical Examinations</span>
               <span className="text-emerald-100">Immunizations</span>
-              <span className="text-emerald-100">Women's Health</span>
+              <span className="text-emerald-100">Women&apos;s Health</span>
               <span className="text-emerald-100">Pediatric Care</span>
             </nav>
           </div>

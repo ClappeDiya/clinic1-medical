@@ -280,7 +280,7 @@ export default function HomePage() {
               <div className="relative h-40 sm:h-48">
                 <OptimizedImage
                   src="/assets/images/services/womens-health.jpg"
-                  alt="Women's Health Services"
+                  alt="Women&apos;s Health Services"
                   width={400}
                   height={200}
                   className="w-full h-full"
@@ -296,9 +296,9 @@ export default function HomePage() {
                 </div>
               </div>
               <CardHeader className="p-4 sm:p-6">
-                <CardTitle className="text-cyan-700 text-lg sm:text-xl">Women's Health</CardTitle>
+                <CardTitle className="text-cyan-700 text-lg sm:text-xl">Women&apos;s Health</CardTitle>
                 <CardDescription className="text-sm sm:text-base leading-relaxed">
-                  Specialized care for women's health needs and reproductive health.
+                  Specialized care for women&apos;s health needs and reproductive health.
                 </CardDescription>
               </CardHeader>
             </Card>

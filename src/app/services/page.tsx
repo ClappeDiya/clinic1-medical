@@ -2,20 +2,15 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { 
+import {
   Activity,
-  Heart,
   Baby,
   Users,
   Pill,
-  Shield,
   UserCheck,
   Calendar,
   Phone,
   CheckCircle,
-  Clock,
-  Star,
-  Award,
   Thermometer,
   Eye,
   Scissors,
@@ -171,17 +166,17 @@ export default function ServicesPage() {
               </CardContent>
             </Card>
 
-            {/* Women's Health */}
+            {/* Women&apos;s Health */}
             <Card className="hover:shadow-xl transition-all duration-300 border-2 hover:border-pink-200">
               <CardHeader className="text-center pb-4">
                 <div className="mx-auto bg-pink-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
                   <Users className="h-8 w-8 text-pink-600" />
                 </div>
-                <CardTitle className="text-xl">Women's Health</CardTitle>
+                <CardTitle className="text-xl">Women&apos;s Health</CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-center mb-4">
-                  Specialized healthcare services for women's unique health needs.
+                  Specialized healthcare services for women&apos;s unique health needs.
                 </CardDescription>
                 <ul className="space-y-2 text-sm text-gray-600">
                   <li className="flex items-start space-x-2">
@@ -388,7 +383,7 @@ export default function ServicesPage() {
               Ready to Experience Quality Healthcare?
             </h2>
             <p className="text-xl text-emerald-100 mb-8">
-              Our comprehensive medical services are designed to meet all your family's healthcare needs. 
+              Our comprehensive medical services are designed to meet all your family&apos;s healthcare needs. 
               Schedule your appointment today and take the first step towards better health.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

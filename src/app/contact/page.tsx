@@ -1,4 +1,3 @@
-import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -9,10 +8,8 @@ import {
   Mail,
   MapPin,
   Clock,
-  Calendar,
   MessageSquare,
   Car,
-  Bus,
   Send,
   Info,
   AlertCircle,
@@ -36,7 +33,7 @@ export default function ContactPage() {
             </h1>
             <p className="text-lg sm:text-xl text-gray-600 leading-relaxed">
               Ready to schedule an appointment or have questions about your healthcare? 
-              We're here to help. Contact us today to experience compassionate, 
+              We&apos;re here to help. Contact us today to experience compassionate, 
               comprehensive family medicine care.
             </p>
           </div>
@@ -230,7 +227,7 @@ export default function ContactPage() {
                 Send Us a Message
               </h2>
               <p className="text-lg sm:text-xl text-gray-600">
-                Have a question or need more information? Send us a message and we'll get back to you promptly.
+                Have a question or need more information? Send us a message and we&apos;ll get back to you promptly.
               </p>
             </div>
 
@@ -317,7 +314,7 @@ export default function ContactPage() {
                 <div className="bg-blue-50 p-4 rounded-lg">
                   <p className="text-sm text-blue-800">
                     <Info className="h-4 w-4 inline mr-1" />
-                    For urgent medical concerns, please call our office directly at 780-761-2430 or seek immediate medical attention if it's an emergency.
+                    For urgent medical concerns, please call our office directly at 780-761-2430 or seek immediate medical attention if it&apos;s an emergency.
                   </p>
                 </div>
 

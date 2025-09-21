@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
 import { 
@@ -15,7 +15,6 @@ import {
   Shield,
   Calendar,
   Phone,
-  Star,
   CheckCircle
 } from "lucide-react"
 
@@ -186,7 +185,7 @@ export default function DoctorsPage() {
                         </div>
                         <div className="flex items-center space-x-2">
                           <CheckCircle className="h-4 w-4 text-green-500" />
-                          <span className="text-sm text-gray-600">Women's Health</span>
+                          <span className="text-sm text-gray-600">Women&apos;s Health</span>
                         </div>
                         <div className="flex items-center space-x-2">
                           <CheckCircle className="h-4 w-4 text-green-500" />
@@ -215,7 +214,7 @@ export default function DoctorsPage() {
                       <p className="text-gray-600 leading-relaxed">
                         Dr. Akpede is dedicated to providing comprehensive, patient-centered healthcare with a focus 
                         on building trust and open communication with his patients. He believes in the importance of 
-                        understanding each patient's unique needs and circumstances to deliver personalized medical care. 
+                        understanding each patient&apos;s unique needs and circumstances to deliver personalized medical care. 
                         His approach emphasizes both treatment and prevention to help patients achieve their health goals.
                       </p>
                     </div>
@@ -267,9 +266,9 @@ export default function DoctorsPage() {
 
             <Card className="text-center p-6 hover:shadow-lg transition-shadow duration-300">
               <Users className="h-12 w-12 text-green-600 mx-auto mb-4" />
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Women's Health</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Women&apos;s Health</h3>
               <p className="text-gray-600">
-                Specialized care for women's health needs including reproductive health services.
+                Specialized care for women&apos;s health needs including reproductive health services.
               </p>
             </Card>
 
@@ -301,7 +300,7 @@ export default function DoctorsPage() {
             </h2>
             <p className="text-xl text-emerald-100 mb-8">
               Schedule an appointment with one of our experienced family physicians. 
-              We're here to provide the comprehensive healthcare you and your family deserve.
+              We&apos;re here to provide the comprehensive healthcare you and your family deserve.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="bg-yellow-500 text-emerald-900 hover:bg-yellow-400 font-semibold shadow-lg">

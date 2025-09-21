@@ -11,15 +11,12 @@ import {
   Apple,
   ShieldCheck,
   Pill,
-  Clock,
   Phone,
   Calendar,
   AlertCircle,
   Info,
-  BookOpen,
   Users,
-  CreditCard,
-  MapPin
+  CreditCard
 } from "lucide-react"
 import ClinicLogo from "@/components/ClinicLogo"
 
@@ -38,7 +35,7 @@ export default function ResourcesPage() {
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed">
               Access important health information, patient forms, and educational resources 
-              to help you make informed decisions about your healthcare. We're committed to 
+              to help you make informed decisions about your healthcare. We&apos;re committed to 
               empowering you with the knowledge you need for better health.
             </p>
           </div>
@@ -300,7 +297,7 @@ export default function ResourcesPage() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900">New Patient Registration Form</h3>
-                  <p className="text-sm text-gray-600">Complete this form if you're a new patient</p>
+                  <p className="text-sm text-gray-600">Complete this form if you&apos;re a new patient</p>
                 </div>
               </div>
               <Button variant="outline" className="w-full" asChild>
@@ -419,7 +416,7 @@ export default function ResourcesPage() {
               Questions About Your Health?
             </h2>
             <p className="text-xl text-emerald-100 mb-8">
-              Don't hesitate to reach out to our healthcare team. We're here to help you 
+              Don&apos;t hesitate to reach out to our healthcare team. We&apos;re here to help you 
               navigate your health journey and provide the care you need.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

@@ -310,7 +310,7 @@ export default function AboutPage() {
               Why Choose Clinic 1 Medical?
             </h2>
             <p className="text-lg sm:text-xl text-emerald-100 mb-8 sm:mb-12">
-              We're committed to providing exceptional healthcare that makes a difference in your life.
+              We&apos;re committed to providing exceptional healthcare that makes a difference in your life.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
