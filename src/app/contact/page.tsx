@@ -1,9 +1,12 @@
+"use client"
+
+import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { 
+import {
   Phone,
   Mail,
   MapPin,
@@ -13,12 +16,71 @@ import {
   Send,
   Info,
   AlertCircle,
-  CheckCircle
+  CheckCircle,
+  Loader
 } from "lucide-react"
 import ClinicLogo from "@/components/ClinicLogo"
 import OptimizedImage from "@/components/OptimizedImage"
 
 export default function ContactPage() {
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    phone: '',
+    subject: '',
+    message: ''
+  })
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
+  const [statusMessage, setStatusMessage] = useState('')
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }))
+  }
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    setIsSubmitting(true)
+    setSubmitStatus('idle')
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
+
+      const result = await response.json()
+
+      if (response.ok) {
+        setSubmitStatus('success')
+        setStatusMessage('Thank you! Your message has been sent successfully. We will get back to you soon.')
+        setFormData({
+          firstName: '',
+          lastName: '',
+          email: '',
+          phone: '',
+          subject: '',
+          message: ''
+        })
+      } else {
+        throw new Error(result.error || 'Failed to send message')
+      }
+    } catch (error) {
+      setSubmitStatus('error')
+      setStatusMessage(error instanceof Error ? error.message : 'Failed to send message. Please try again or call us directly.')
+    } finally {
+      setIsSubmitting(false)
+    }
+  }
+
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
@@ -132,17 +194,17 @@ export default function ContactPage() {
                 {/* Building Image */}
                 <div className="my-6">
                   <OptimizedImage
-                    src="/assets/royal-centre-building.jpg"
-                    alt="Royal Centre building - Clinic 1 Medical location at 16644-71 St NW Edmonton, featuring modern architecture with ample parking"
-                    width={600}
-                    height={400}
+                    src="/assets/clinic1-new-building.jpg"
+                    alt="Royal Centre shopping complex in Edmonton - Current photo showing the retail center where Clinic 1 Medical is located, featuring ample parking, trees, and modern commercial architecture"
+                    width={800}
+                    height={600}
                     className="w-full h-48 sm:h-56 md:h-64 rounded-lg shadow-lg border border-gray-200"
                     objectFit="cover"
                     sizes="(max-width: 768px) 100vw, 50vw"
                     priority={true}
                   />
                   <p className="text-sm text-gray-500 mt-3 text-center font-medium">
-                    📍 Current photo of Royal Centre - Professional medical building with ground-floor access, ample parking, and Pharmasave pharmacy
+                    📍 Royal Centre - Modern shopping complex housing Clinic 1 Medical with ample parking, retail convenience, and easy accessibility
                   </p>
                 </div>
                 
@@ -232,30 +294,57 @@ export default function ContactPage() {
             </div>
 
             <Card className="p-6 sm:p-8">
-              <form className="space-y-6">
+              {/* Status Messages */}
+              {submitStatus === 'success' && (
+                <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg">
+                  <div className="flex items-center">
+                    <CheckCircle className="h-5 w-5 text-green-600 mr-2" />
+                    <p className="text-green-800">{statusMessage}</p>
+                  </div>
+                </div>
+              )}
+
+              {submitStatus === 'error' && (
+                <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg">
+                  <div className="flex items-center">
+                    <AlertCircle className="h-5 w-5 text-red-600 mr-2" />
+                    <p className="text-red-800">{statusMessage}</p>
+                  </div>
+                </div>
+              )}
+
+              <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-2">
                       First Name *
                     </label>
-                    <Input 
+                    <Input
                       id="firstName"
+                      name="firstName"
                       type="text"
                       required
                       placeholder="Enter your first name"
                       className="w-full"
+                      value={formData.firstName}
+                      onChange={handleInputChange}
+                      disabled={isSubmitting}
                     />
                   </div>
                   <div>
                     <label htmlFor="lastName" className="block text-sm font-medium text-gray-700 mb-2">
                       Last Name *
                     </label>
-                    <Input 
+                    <Input
                       id="lastName"
+                      name="lastName"
                       type="text"
                       required
                       placeholder="Enter your last name"
                       className="w-full"
+                      value={formData.lastName}
+                      onChange={handleInputChange}
+                      disabled={isSubmitting}
                     />
                   </div>
                 </div>
@@ -265,23 +354,31 @@ export default function ContactPage() {
                     <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
                       Email Address *
                     </label>
-                    <Input 
+                    <Input
                       id="email"
+                      name="email"
                       type="email"
                       required
                       placeholder="Enter your email address"
                       className="w-full"
+                      value={formData.email}
+                      onChange={handleInputChange}
+                      disabled={isSubmitting}
                     />
                   </div>
                   <div>
                     <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
                       Phone Number
                     </label>
-                    <Input 
+                    <Input
                       id="phone"
+                      name="phone"
                       type="tel"
                       placeholder="Enter your phone number"
                       className="w-full"
+                      value={formData.phone}
+                      onChange={handleInputChange}
+                      disabled={isSubmitting}
                     />
                   </div>
                 </div>
@@ -290,12 +387,16 @@ export default function ContactPage() {
                   <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
                     Subject *
                   </label>
-                  <Input 
+                  <Input
                     id="subject"
+                    name="subject"
                     type="text"
                     required
                     placeholder="What is this regarding?"
                     className="w-full"
+                    value={formData.subject}
+                    onChange={handleInputChange}
+                    disabled={isSubmitting}
                   />
                 </div>
 
@@ -303,11 +404,15 @@ export default function ContactPage() {
                   <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
                     Message *
                   </label>
-                  <Textarea 
+                  <Textarea
                     id="message"
+                    name="message"
                     required
                     placeholder="Please provide details about your inquiry..."
                     className="w-full min-h-[120px]"
+                    value={formData.message}
+                    onChange={handleInputChange}
+                    disabled={isSubmitting}
                   />
                 </div>
 
@@ -318,9 +423,22 @@ export default function ContactPage() {
                   </p>
                 </div>
 
-                <Button type="submit" className="w-full bg-blue-600 hover:bg-blue-700">
-                  <Send className="mr-2 h-4 w-4" />
-                  Send Message
+                <Button
+                  type="submit"
+                  className="w-full bg-blue-600 hover:bg-blue-700"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? (
+                    <>
+                      <Loader className="mr-2 h-4 w-4 animate-spin" />
+                      Sending Message...
+                    </>
+                  ) : (
+                    <>
+                      <Send className="mr-2 h-4 w-4" />
+                      Send Message
+                    </>
+                  )}
                 </Button>
               </form>
             </Card>
