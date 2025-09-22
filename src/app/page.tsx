@@ -71,8 +71,8 @@ export default function HomePage() {
             <div className="lg:col-span-5 w-full order-1 lg:order-2">
               <div className="relative rounded-2xl overflow-hidden shadow-xl mx-auto max-w-md lg:max-w-none">
                 <OptimizedImage
-                  src="/assets/doctor-with-stethoscope.jpg"
-                  alt="Professional male physician of African heritage at Clinic 1 Medical"
+                  src="/assets/stethoscope-medical.jpg"
+                  alt="Professional healthcare at Clinic 1 Medical - Compassionate medical care in Edmonton"
                   width={600}
                   height={400}
                   className="w-full h-56 sm:h-64 md:h-72 lg:h-80 xl:h-96"
