@@ -1,0 +1,33 @@
+name: clinic1-medical
+region: sfo
+services:
+- name: web
+  build_command: npm run build
+  run_command: npm run start
+  environment_slug: node-js
+  github:
+    branch: main
+    deploy_on_push: true
+    repo: ClappeDiya/clinic1-medical
+  http_port: 3000
+  instance_count: 1
+  instance_size_slug: basic-xxs
+  source_dir: /
+  envs:
+  - key: EMAIL_HOST
+    value: mail.clappe.com
+  - key: EMAIL_PORT
+    value: "587"
+  - key: EMAIL_USE_TLS
+    value: "True"
+  - key: EMAIL_HOST_USER
+    value: account@clappe.com
+  - key: EMAIL_HOST_PASSWORD
+    type: SECRET
+    value: teams2244
+  - key: DEFAULT_FROM_EMAIL
+    value: noreply@clapbill.com
+  - key: CLINIC_EMAIL
+    value: cliniconemedical@gmail.com
+  - key: NODE_ENV
+    value: production
