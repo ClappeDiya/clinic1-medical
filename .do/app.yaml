@@ -3,6 +3,10 @@ region: sfo
 services:
 - build_command: npm run build
   environment_slug: node-js
+  github:
+    branch: main
+    deploy_on_push: true
+    repo: ClappeDiya/clinic1-medical
   envs:
   - key: EMAIL_HOST
     scope: RUN_AND_BUILD_TIME
