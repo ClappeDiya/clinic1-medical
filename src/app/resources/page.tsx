@@ -59,9 +59,11 @@ export default function ResourcesPage() {
               <FileText className="h-12 w-12 text-blue-600 mx-auto mb-4" />
               <h3 className="font-semibold text-gray-900 mb-2">Patient Forms</h3>
               <p className="text-sm text-gray-600 mb-4">Download and complete forms before your visit</p>
-              <Button size="sm" variant="outline">
-                <Download className="mr-2 h-4 w-4" />
-                Download
+              <Button size="sm" variant="outline" asChild>
+                <a href="#patient-forms">
+                  <Download className="mr-2 h-4 w-4" />
+                  Download
+                </a>
               </Button>
             </Card>
 
@@ -69,9 +71,11 @@ export default function ResourcesPage() {
               <CreditCard className="h-12 w-12 text-green-600 mx-auto mb-4" />
               <h3 className="font-semibold text-gray-900 mb-2">Insurance Info</h3>
               <p className="text-sm text-gray-600 mb-4">Insurance plans and billing information</p>
-              <Button size="sm" variant="outline">
-                <Info className="mr-2 h-4 w-4" />
-                Learn More
+              <Button size="sm" variant="outline" asChild>
+                <Link href="/assets/pdfs/patient-forms/insurance-information-form.html" target="_blank">
+                  <Info className="mr-2 h-4 w-4" />
+                  Learn More
+                </Link>
               </Button>
             </Card>
 
@@ -79,9 +83,11 @@ export default function ResourcesPage() {
               <Calendar className="h-12 w-12 text-purple-600 mx-auto mb-4" />
               <h3 className="font-semibold text-gray-900 mb-2">Appointments</h3>
               <p className="text-sm text-gray-600 mb-4">Schedule, reschedule, or cancel appointments</p>
-              <Button size="sm" variant="outline">
-                <Phone className="mr-2 h-4 w-4" />
-                Call Us
+              <Button size="sm" variant="outline" asChild>
+                <a href="tel:780-761-2430">
+                  <Phone className="mr-2 h-4 w-4" />
+                  Call Us
+                </a>
               </Button>
             </Card>
 
@@ -89,9 +95,11 @@ export default function ResourcesPage() {
               <AlertCircle className="h-12 w-12 text-orange-600 mx-auto mb-4" />
               <h3 className="font-semibold text-gray-900 mb-2">Urgent Care</h3>
               <p className="text-sm text-gray-600 mb-4">When to seek immediate medical attention</p>
-              <Button size="sm" variant="outline">
-                <Info className="mr-2 h-4 w-4" />
-                Read Guide
+              <Button size="sm" variant="outline" asChild>
+                <a href="#emergency-information">
+                  <Info className="mr-2 h-4 w-4" />
+                  Read Guide
+                </a>
               </Button>
             </Card>
           </div>
@@ -278,7 +286,7 @@ export default function ResourcesPage() {
       </section>
 
       {/* Patient Forms */}
-      <section className="py-16 bg-white">
+      <section id="patient-forms" className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
@@ -366,7 +374,7 @@ export default function ResourcesPage() {
       </section>
 
       {/* Emergency Information */}
-      <section className="py-16 bg-red-50">
+      <section id="emergency-information" className="py-16 bg-red-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-8">

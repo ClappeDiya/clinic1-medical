@@ -44,8 +44,8 @@ export default function DoctorsPage() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="space-y-16">
-            
-            {/* Dr. Deji Ogundiya */}
+
+            {/* Dr. Collington Akpede - NOW FIRST */}
             <Card className="max-w-6xl mx-auto overflow-hidden border-2 border-emerald-100 hover:shadow-xl transition-shadow duration-300">
               <div className="grid grid-cols-1 lg:grid-cols-5 gap-0">
                 {/* Photo Section */}
@@ -57,13 +57,13 @@ export default function DoctorsPage() {
                     <Badge className="bg-emerald-100 text-emerald-800">Family Physician</Badge>
                   </div>
                 </div>
-                
+
                 {/* Details Section */}
                 <div className="lg:col-span-3 p-8">
                   <div className="space-y-6">
                     <div>
                       <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-2">
-                        Dr. Deji Ogundiya
+                        Dr. Collington Akpede
                       </h2>
                       <p className="text-xl text-emerald-600 font-semibold">
                         M.D
@@ -87,95 +87,6 @@ export default function DoctorsPage() {
                     <div>
                       <h3 className="text-xl font-semibold text-gray-900 mb-4 flex items-center">
                         <Award className="h-5 w-5 mr-2 text-green-600" />
-                        Areas of Expertise
-                      </h3>
-                      <div className="grid grid-cols-2 gap-3">
-                        <div className="flex items-center space-x-2">
-                          <CheckCircle className="h-4 w-4 text-green-500" />
-                          <span className="text-sm text-gray-600">Preventive Care</span>
-                        </div>
-                        <div className="flex items-center space-x-2">
-                          <CheckCircle className="h-4 w-4 text-green-500" />
-                          <span className="text-sm text-gray-600">Chronic Disease Management</span>
-                        </div>
-                        <div className="flex items-center space-x-2">
-                          <CheckCircle className="h-4 w-4 text-green-500" />
-                          <span className="text-sm text-gray-600">Diabetes Care</span>
-                        </div>
-                        <div className="flex items-center space-x-2">
-                          <CheckCircle className="h-4 w-4 text-green-500" />
-                          <span className="text-sm text-gray-600">Hypertension Management</span>
-                        </div>
-                        <div className="flex items-center space-x-2">
-                          <CheckCircle className="h-4 w-4 text-green-500" />
-                          <span className="text-sm text-gray-600">Adult & Geriatric Care</span>
-                        </div>
-                        <div className="flex items-center space-x-2">
-                          <CheckCircle className="h-4 w-4 text-green-500" />
-                          <span className="text-sm text-gray-600">Health Screenings</span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div>
-                      <h3 className="text-xl font-semibold text-gray-900 mb-4 flex items-center">
-                        <Heart className="h-5 w-5 mr-2 text-red-500" />
-                        Philosophy of Care
-                      </h3>
-                      <p className="text-gray-600 leading-relaxed">
-                        Dr. Ogundiya believes in building strong, lasting relationships with his patients through 
-                        compassionate care and evidence-based medicine. He emphasizes preventive care and patient 
-                        education to help individuals and families achieve optimal health outcomes. With his extensive 
-                        international training and Canadian certification, he brings a comprehensive approach to family medicine.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Card>
-
-            {/* Dr. Collington Akpede */}
-            <Card className="max-w-6xl mx-auto overflow-hidden border-2 border-teal-100 hover:shadow-xl transition-shadow duration-300">
-              <div className="grid grid-cols-1 lg:grid-cols-5 gap-0">
-                {/* Photo Section */}
-                <div className="lg:col-span-2 bg-teal-50 flex items-center justify-center p-12">
-                  <div className="text-center">
-                    <div className="bg-teal-600 w-48 h-48 rounded-full flex items-center justify-center mx-auto mb-6">
-                      <UserCheck className="h-24 w-24 text-yellow-300" />
-                    </div>
-                    <Badge className="bg-teal-100 text-teal-800">Family Physician</Badge>
-                  </div>
-                </div>
-                
-                {/* Details Section */}
-                <div className="lg:col-span-3 p-8">
-                  <div className="space-y-6">
-                    <div>
-                      <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-2">
-                        Dr. Collington Akpede
-                      </h2>
-                      <p className="text-xl text-teal-600 font-semibold">
-                        M.D
-                      </p>
-                    </div>
-
-                    <Separator />
-
-                    <div>
-                      <h3 className="text-xl font-semibold text-gray-900 mb-4 flex items-center">
-                        <GraduationCap className="h-5 w-5 mr-2 text-teal-600" />
-                        Education & Qualifications
-                      </h3>
-                      <ul className="space-y-2 text-gray-600">
-                        <li>• Doctor of Medicine (M.D.)</li>
-                        <li>• Licensed Family Physician in Alberta</li>
-                        <li>• Member of the College of Physicians and Surgeons of Alberta</li>
-                      </ul>
-                    </div>
-
-                    <div>
-                      <h3 className="text-xl font-semibold text-gray-900 mb-4 flex items-center">
-                        <Award className="h-5 w-5 mr-2 text-blue-600" />
                         Areas of Expertise
                       </h3>
                       <div className="grid grid-cols-2 gap-3">
@@ -212,10 +123,99 @@ export default function DoctorsPage() {
                         Philosophy of Care
                       </h3>
                       <p className="text-gray-600 leading-relaxed">
-                        Dr. Akpede is dedicated to providing comprehensive, patient-centered healthcare with a focus 
-                        on building trust and open communication with his patients. He believes in the importance of 
-                        understanding each patient&apos;s unique needs and circumstances to deliver personalized medical care. 
+                        Dr. Akpede is dedicated to providing comprehensive, patient-centered healthcare with a focus
+                        on building trust and open communication with his patients. He believes in the importance of
+                        understanding each patient&apos;s unique needs and circumstances to deliver personalized medical care.
                         His approach emphasizes both treatment and prevention to help patients achieve their health goals.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Card>
+
+            {/* Dr. Deji Ogundiya - NOW SECOND */}
+            <Card className="max-w-6xl mx-auto overflow-hidden border-2 border-teal-100 hover:shadow-xl transition-shadow duration-300">
+              <div className="grid grid-cols-1 lg:grid-cols-5 gap-0">
+                {/* Photo Section */}
+                <div className="lg:col-span-2 bg-teal-50 flex items-center justify-center p-12">
+                  <div className="text-center">
+                    <div className="bg-teal-600 w-48 h-48 rounded-full flex items-center justify-center mx-auto mb-6">
+                      <UserCheck className="h-24 w-24 text-yellow-300" />
+                    </div>
+                    <Badge className="bg-teal-100 text-teal-800">Family Physician</Badge>
+                  </div>
+                </div>
+
+                {/* Details Section */}
+                <div className="lg:col-span-3 p-8">
+                  <div className="space-y-6">
+                    <div>
+                      <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-2">
+                        Dr. Deji Ogundiya
+                      </h2>
+                      <p className="text-xl text-teal-600 font-semibold">
+                        M.D
+                      </p>
+                    </div>
+
+                    <Separator />
+
+                    <div>
+                      <h3 className="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+                        <GraduationCap className="h-5 w-5 mr-2 text-teal-600" />
+                        Education & Qualifications
+                      </h3>
+                      <ul className="space-y-2 text-gray-600">
+                        <li>• Doctor of Medicine (M.D.)</li>
+                        <li>• Licensed Family Physician in Alberta</li>
+                        <li>• Member of the College of Physicians and Surgeons of Alberta</li>
+                      </ul>
+                    </div>
+
+                    <div>
+                      <h3 className="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+                        <Award className="h-5 w-5 mr-2 text-blue-600" />
+                        Areas of Expertise
+                      </h3>
+                      <div className="grid grid-cols-2 gap-3">
+                        <div className="flex items-center space-x-2">
+                          <CheckCircle className="h-4 w-4 text-green-500" />
+                          <span className="text-sm text-gray-600">Preventive Care</span>
+                        </div>
+                        <div className="flex items-center space-x-2">
+                          <CheckCircle className="h-4 w-4 text-green-500" />
+                          <span className="text-sm text-gray-600">Chronic Disease Management</span>
+                        </div>
+                        <div className="flex items-center space-x-2">
+                          <CheckCircle className="h-4 w-4 text-green-500" />
+                          <span className="text-sm text-gray-600">Diabetes Care</span>
+                        </div>
+                        <div className="flex items-center space-x-2">
+                          <CheckCircle className="h-4 w-4 text-green-500" />
+                          <span className="text-sm text-gray-600">Hypertension Management</span>
+                        </div>
+                        <div className="flex items-center space-x-2">
+                          <CheckCircle className="h-4 w-4 text-green-500" />
+                          <span className="text-sm text-gray-600">Adult & Geriatric Care</span>
+                        </div>
+                        <div className="flex items-center space-x-2">
+                          <CheckCircle className="h-4 w-4 text-green-500" />
+                          <span className="text-sm text-gray-600">Health Screenings</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div>
+                      <h3 className="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+                        <Heart className="h-5 w-5 mr-2 text-red-500" />
+                        Philosophy of Care
+                      </h3>
+                      <p className="text-gray-600 leading-relaxed">
+                        Dr. Ogundiya believes in building strong, lasting relationships with his patients through
+                        compassionate care and evidence-based medicine. He emphasizes preventive care and patient
+                        education to help individuals and families achieve optimal health outcomes. With his extensive
+                        international training and Canadian certification, he brings a comprehensive approach to family medicine.
                       </p>
                     </div>
                   </div>

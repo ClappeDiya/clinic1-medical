@@ -4,20 +4,22 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import OptimizedImage from "@/components/OptimizedImage"
 import ClinicLogo from "@/components/ClinicLogo"
-import { 
-  Heart, 
-  Shield, 
-  Users, 
-  Calendar, 
-  Phone, 
-  MapPin, 
+import {
+  Heart,
+  Shield,
+  Users,
+  Calendar,
+  Phone,
+  MapPin,
   Clock,
   Activity,
   Car,
   Baby,
   UserCheck,
   Pill,
-  Award
+  Award,
+  Brain,
+  Video
 } from "lucide-react"
 
 export default function HomePage() {
@@ -356,6 +358,38 @@ export default function HomePage() {
                 </CardDescription>
               </CardHeader>
             </Card>
+
+            {/* Mental Health & Psychiatry Services */}
+            <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-300 border-purple-200 hover:border-purple-300 relative">
+              <Badge className="absolute top-4 right-4 z-10 bg-purple-100 text-purple-800">Specialist Available</Badge>
+              <div className="relative h-40 sm:h-48">
+                <OptimizedImage
+                  src="/assets/images/services/mental-health.jpg"
+                  alt="Mental Health and Psychiatry Services"
+                  width={400}
+                  height={200}
+                  className="w-full h-full"
+                  objectFit="cover"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-purple-800/60 to-transparent">
+                  <div className="absolute top-3 left-3 sm:top-4 sm:left-4">
+                    <div className="bg-white/90 backdrop-blur-sm rounded-full p-2 sm:p-3">
+                      <Brain className="h-4 w-4 sm:h-6 sm:w-6 text-purple-600" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <CardHeader className="p-4 sm:p-6">
+                <CardTitle className="text-purple-700 text-lg sm:text-xl flex items-center gap-2">
+                  Mental Health & Psychiatry
+                  <Video className="h-4 w-4 text-purple-600" />
+                </CardTitle>
+                <CardDescription className="text-sm sm:text-base leading-relaxed">
+                  Visiting psychiatrist provides specialized care with both in-person and virtual appointments.
+                </CardDescription>
+              </CardHeader>
+            </Card>
           </div>
 
           <div className="text-center mt-8 sm:mt-12">
@@ -457,7 +491,7 @@ export default function HomePage() {
               {/* Building Image */}
               <div className="relative rounded-2xl overflow-hidden shadow-xl">
                 <OptimizedImage
-                  src="/assets/royal-centre-building.jpg"
+                  src="/assets/clinic1-new-building.jpg"
                   alt="Royal Centre building - Clinic 1 Medical location at 16644-71 St NW Edmonton, featuring modern architecture with ample parking"
                   width={600}
                   height={400}

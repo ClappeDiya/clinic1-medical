@@ -61,8 +61,11 @@ export default function AboutPage() {
                   our patients. We believe in treating not just symptoms, but the whole person.
                 </p>
                 <p>
-                  From routine check-ups to complex medical conditions, we provide continuity of care 
+                  From routine check-ups to complex medical conditions, we provide continuity of care
                   that helps you and your family maintain optimal health throughout all stages of life.
+                  We&apos;re also proud to offer specialized mental health services through our visiting
+                  psychiatrist, providing both in-person and virtual consultations to support your
+                  complete well-being.
                 </p>
               </div>
             </div>
@@ -231,7 +234,7 @@ export default function AboutPage() {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
                 <div className="relative">
                   <OptimizedImage
-                    src="/assets/royal-centre-building.jpg"
+                    src="/assets/clinic1-new-building.jpg"
                     alt="Royal Centre building - Clinic 1 Medical location at 16644-71 St NW Edmonton, featuring modern architecture with ample parking"
                     width={600}
                     height={400}

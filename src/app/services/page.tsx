@@ -16,7 +16,10 @@ import {
   Scissors,
   Syringe,
   FileText,
-  HeartPulse
+  HeartPulse,
+  Brain,
+  Video,
+  UserPlus
 } from "lucide-react"
 
 export default function ServicesPage() {
@@ -240,6 +243,46 @@ export default function ServicesPage() {
               </CardContent>
             </Card>
 
+            {/* Mental Health Services - Psychiatrist */}
+            <Card className="hover:shadow-xl transition-all duration-300 border-2 hover:border-teal-200 relative">
+              <div className="absolute top-4 right-4">
+                <Badge className="bg-teal-100 text-teal-800">Specialist Available</Badge>
+              </div>
+              <CardHeader className="text-center pb-4">
+                <div className="mx-auto bg-teal-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                  <Brain className="h-8 w-8 text-teal-600" />
+                </div>
+                <CardTitle className="text-xl">Mental Health & Psychiatry</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <CardDescription className="text-center mb-4">
+                  Visiting psychiatrist provides specialized mental health care.
+                </CardDescription>
+                <ul className="space-y-2 text-sm text-gray-600">
+                  <li className="flex items-start space-x-2">
+                    <CheckCircle className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
+                    <span>Depression & anxiety treatment</span>
+                  </li>
+                  <li className="flex items-start space-x-2">
+                    <CheckCircle className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
+                    <span>Medication management for mental health</span>
+                  </li>
+                  <li className="flex items-start space-x-2">
+                    <CheckCircle className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
+                    <span>ADHD assessment & treatment</span>
+                  </li>
+                  <li className="flex items-start space-x-2">
+                    <CheckCircle className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
+                    <span>Bipolar disorder management</span>
+                  </li>
+                  <li className="flex items-start space-x-2">
+                    <Video className="h-4 w-4 text-blue-500 mt-0.5 flex-shrink-0" />
+                    <span><strong>Virtual & in-person appointments</strong></span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
             {/* Physical Examinations */}
             <Card className="hover:shadow-xl transition-all duration-300 border-2 hover:border-indigo-200">
               <CardHeader className="text-center pb-4">
@@ -275,6 +318,98 @@ export default function ServicesPage() {
                   </li>
                 </ul>
               </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Specialist Services */}
+      <section className="py-16 bg-gradient-to-br from-teal-50 to-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <Badge className="bg-teal-100 text-teal-800 hover:bg-teal-100 mb-4">
+                Specialist Care Available
+              </Badge>
+              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+                Visiting Psychiatrist Services
+              </h2>
+              <p className="text-xl text-gray-600 mb-8">
+                We are pleased to offer specialized psychiatric care through our visiting psychiatrist,
+                providing both in-person and virtual consultations for comprehensive mental health support.
+              </p>
+            </div>
+
+            <Card className="p-8 shadow-xl border-2 border-teal-200">
+              <div className="grid md:grid-cols-2 gap-8">
+                <div>
+                  <h3 className="font-bold text-xl text-gray-900 mb-4 flex items-center">
+                    <Brain className="h-6 w-6 text-teal-600 mr-2" />
+                    Conditions Treated
+                  </h3>
+                  <ul className="space-y-2 text-gray-600">
+                    <li className="flex items-start space-x-2">
+                      <CheckCircle className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
+                      <span>Depression & mood disorders</span>
+                    </li>
+                    <li className="flex items-start space-x-2">
+                      <CheckCircle className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
+                      <span>Anxiety & panic disorders</span>
+                    </li>
+                    <li className="flex items-start space-x-2">
+                      <CheckCircle className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
+                      <span>ADHD (adult & pediatric)</span>
+                    </li>
+                    <li className="flex items-start space-x-2">
+                      <CheckCircle className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
+                      <span>Bipolar disorder</span>
+                    </li>
+                    <li className="flex items-start space-x-2">
+                      <CheckCircle className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
+                      <span>PTSD & trauma-related disorders</span>
+                    </li>
+                    <li className="flex items-start space-x-2">
+                      <CheckCircle className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
+                      <span>OCD & related conditions</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h3 className="font-bold text-xl text-gray-900 mb-4 flex items-center">
+                    <UserPlus className="h-6 w-6 text-teal-600 mr-2" />
+                    Consultation Options
+                  </h3>
+                  <div className="space-y-4">
+                    <div className="bg-blue-50 p-4 rounded-lg">
+                      <h4 className="font-semibold text-gray-900 mb-2 flex items-center">
+                        <Users className="h-5 w-5 text-blue-600 mr-2" />
+                        In-Person Appointments
+                      </h4>
+                      <p className="text-sm text-gray-600">
+                        Face-to-face consultations at our clinic for comprehensive psychiatric assessment and treatment.
+                      </p>
+                    </div>
+
+                    <div className="bg-green-50 p-4 rounded-lg">
+                      <h4 className="font-semibold text-gray-900 mb-2 flex items-center">
+                        <Video className="h-5 w-5 text-green-600 mr-2" />
+                        Virtual Consultations
+                      </h4>
+                      <p className="text-sm text-gray-600">
+                        Convenient online appointments from the comfort of your home, maintaining the same quality of care.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="mt-4 p-4 bg-yellow-50 rounded-lg">
+                    <p className="text-sm text-yellow-800">
+                      <strong>Note:</strong> Referral from your family physician may be required.
+                      Please contact our office to schedule your psychiatric consultation.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </Card>
           </div>
         </div>
