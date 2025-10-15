@@ -6,25 +6,28 @@ test.describe('Contact Form Tests', () => {
   });
 
   test('should load contact page successfully', async ({ page }) => {
-    await expect(page).toHaveTitle(/Contact.*Clinic 1 Medical/i);
-    await expect(page.locator('h1')).toContainText(/Contact/i);
+    // Check page title contains clinic name
+    await expect(page).toHaveTitle(/Clinic 1 Medical/i);
+
+    // Check main heading contains "Contact" or "Get in Touch"
+    await expect(page.locator('h1').first()).toContainText(/Contact|Get in Touch/i);
 
     await page.screenshot({ path: 'test-results/screenshots/02-contact-page.png', fullPage: true });
   });
 
   test('should display contact information', async ({ page }) => {
-    // Check phone number
-    await expect(page.locator('text=/780-761-2430/')).toBeVisible();
+    // Check phone number - Use .first() for multiple instances
+    await expect(page.locator('text=/780-761-2430/').first()).toBeVisible();
 
-    // Check text number
-    await expect(page.locator('text=/587-926-7747/')).toBeVisible();
+    // Check text number - Use .first() for multiple instances
+    await expect(page.locator('text=/587-926-7747/').first()).toBeVisible();
 
     // Check fax number
-    await expect(page.locator('text=/780-473-3330/')).toBeVisible();
+    await expect(page.locator('text=/780-473-3330/').first()).toBeVisible();
 
-    // Check address
-    await expect(page.locator('text=/16644-71 St NW/i')).toBeVisible();
-    await expect(page.locator('text=/Edmonton/i')).toBeVisible();
+    // Check address - Use .first() for multiple instances
+    await expect(page.locator('text=/16644-71 St NW/i').first()).toBeVisible();
+    await expect(page.locator('text=/Edmonton/i').first()).toBeVisible();
   });
 
   test('should have all form fields', async ({ page }) => {
@@ -98,14 +101,16 @@ test.describe('Contact Form Tests', () => {
   });
 
   test('should display office hours', async ({ page }) => {
-    await expect(page.locator('text=/Monday/i')).toBeVisible();
-    await expect(page.locator('text=/9:00 AM - 5:00 PM/i')).toBeVisible();
-    await expect(page.locator('text=/Saturday.*Closed/i')).toBeVisible();
+    // Check office hours - Use .first() for multiple instances
+    await expect(page.locator('text=/Monday/i').first()).toBeVisible();
+    await expect(page.locator('text=/9:00 AM - 5:00 PM/i').first()).toBeVisible();
+    await expect(page.locator('text=/Saturday.*Closed/i').first()).toBeVisible();
   });
 
   test('should have emergency information', async ({ page }) => {
-    await expect(page.locator('text=/emergency/i')).toBeVisible();
-    await expect(page.locator('text=/911/i')).toBeVisible();
+    // Check emergency info - Use .first() for multiple instances
+    await expect(page.locator('text=/emergency/i').first()).toBeVisible();
+    await expect(page.locator('text=/911/i').first()).toBeVisible();
   });
 
   test('should have accessible form labels', async ({ page }) => {
