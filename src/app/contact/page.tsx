@@ -188,9 +188,9 @@ export default function ContactPage() {
               </CardHeader>
               <CardContent className="text-center space-y-4">
                 <div>
-                  <p className="text-xl font-semibold text-gray-900">Royal Center</p>
+                  <p className="text-xl font-semibold text-gray-900">Royal Centre</p>
                   <p className="text-lg text-gray-600">16644-71 St NW</p>
-                  <p className="text-lg text-gray-600">Edmonton, AB T5Z ON5</p>
+                  <p className="text-lg text-gray-600">Edmonton, AB T5Z 0N5</p>
                 </div>
                 
                 {/* Building Image */}

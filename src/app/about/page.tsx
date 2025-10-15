@@ -53,7 +53,7 @@ export default function AboutPage() {
                 <p>
                   Clinic 1 Medical was founded with a simple yet powerful vision: to provide comprehensive, 
                   compassionate healthcare that puts patients and families first. Located in the heart of 
-                  Edmonton at Royal Center, we have been serving our community with dedication and excellence.
+                  Edmonton at Royal Centre, we have been serving our community with dedication and excellence.
                 </p>
                 <p>
                   Our practice brings together experienced family physicians who share a commitment to 
@@ -179,7 +179,7 @@ export default function AboutPage() {
               </div>
               <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 sm:mb-3">Compassion</h3>
               <p className="text-gray-600 text-sm sm:text-base">
-                We treat every patient with empathy, understanding, and genuine care for their wellbeing.
+                We treat every patient with empathy, understanding, and genuine care for their well-being.
               </p>
             </div>
 
@@ -337,7 +337,7 @@ export default function AboutPage() {
                 <MapPin className="h-12 w-12 text-green-400 mx-auto mb-4" />
                 <h3 className="text-xl font-bold text-white mb-2">Prime Location</h3>
                 <p className="text-blue-100">
-                  Easily accessible location in Royal Center with ample parking available.
+                  Easily accessible location in Royal Centre with ample parking available.
                 </p>
               </div>
             </div>
@@ -369,9 +369,9 @@ export default function AboutPage() {
                   <MapPin className="h-8 w-8 text-blue-600 mx-auto mb-3" />
                   <h3 className="font-semibold text-lg mb-2">Location</h3>
                   <p className="text-gray-600">
-                    Royal Center<br />
+                    Royal Centre<br />
                     16644-71 St NW<br />
-                    Edmonton, AB T5Z ON5
+                    Edmonton, AB T5Z 0N5
                   </p>
                 </div>
                 

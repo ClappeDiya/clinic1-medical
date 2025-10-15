@@ -62,7 +62,7 @@ export default function HomePage() {
                 </div>
                 <div className="flex items-center space-x-2">
                   <MapPin className="h-4 w-4 text-emerald-600 flex-shrink-0" />
-                  <span className="text-sm text-gray-600">Royal Center, Edmonton</span>
+                  <span className="text-sm text-gray-600">Royal Centre, Edmonton</span>
                 </div>
               </div>
             </div>
@@ -100,7 +100,7 @@ export default function HomePage() {
                         <MapPin className="h-3 w-3 sm:h-4 sm:w-4 text-yellow-300 mt-0.5 flex-shrink-0" />
                         <div>
                           <p className="font-semibold">Edmonton, AB</p>
-                          <p className="text-emerald-100">Royal Center</p>
+                          <p className="text-emerald-100">Royal Centre</p>
                         </div>
                       </div>
                     </div>

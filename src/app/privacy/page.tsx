@@ -61,7 +61,7 @@ export default function PrivacyPolicyPage() {
               </CardHeader>
               <CardContent className="pt-6 space-y-4">
                 <p className="text-gray-700 leading-relaxed">
-                  Clinic 1 Medical, located at Royal Center, 16644-71 St NW, Edmonton, Alberta T5Z ON5, is committed to protecting
+                  Clinic 1 Medical, located at Royal Centre, 16644-71 St NW, Edmonton, Alberta T5Z 0N5, is committed to protecting
                   your privacy. This policy explains in simple terms how we collect, use, and protect your personal information when
                   you visit our clinic or use our services.
                 </p>
@@ -445,8 +445,8 @@ export default function PrivacyPolicyPage() {
                       <Mail className="h-5 w-5 text-emerald-600 mt-0.5" />
                       <div>
                         <p>Clinic 1 Medical</p>
-                        <p>Royal Center, 16644-71 St NW</p>
-                        <p>Edmonton, AB T5Z ON5</p>
+                        <p>Royal Centre, 16644-71 St NW</p>
+                        <p>Edmonton, AB T5Z 0N5</p>
                         <p>Fax: 780-473-3330</p>
                       </div>
                     </div>

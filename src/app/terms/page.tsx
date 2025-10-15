@@ -60,8 +60,8 @@ export default function TermsOfServicePage() {
               </CardHeader>
               <CardContent className="pt-6 space-y-4">
                 <p className="text-gray-700 leading-relaxed">
-                  Thank you for choosing Clinic 1 Medical for your healthcare needs. We&apos;re located at Royal Center,
-                  16644-71 St NW, Edmonton, Alberta T5Z ON5. Our doctors, Dr. Deji Ogundiya and Dr. Collington Akpede,
+                  Thank you for choosing Clinic 1 Medical for your healthcare needs. We&apos;re located at Royal Centre,
+                  16644-71 St NW, Edmonton, Alberta T5Z 0N5. Our doctors, Dr. Deji Ogundiya and Dr. Collington Akpede,
                   along with our entire team, are committed to providing you with excellent medical care.
                 </p>
                 <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
@@ -728,9 +728,9 @@ export default function TermsOfServicePage() {
                     <div className="flex items-start space-x-3">
                       <Users className="h-5 w-5 text-blue-600 mt-0.5" />
                       <div>
-                        <p>Royal Center</p>
+                        <p>Royal Centre</p>
                         <p>16644-71 St NW</p>
-                        <p>Edmonton, AB T5Z ON5</p>
+                        <p>Edmonton, AB T5Z 0N5</p>
                       </div>
                     </div>
                   </div>
