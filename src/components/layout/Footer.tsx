@@ -82,6 +82,7 @@ export default function Footer() {
                 <div className="text-emerald-100">
                   <p>Mon-Fri: 9:00 AM - 5:00 PM</p>
                   <p>Sat-Sun: Closed</p>
+                  <p className="text-emerald-200 text-sm mt-1">Closed on all public holidays</p>
                 </div>
               </div>
             </div>
