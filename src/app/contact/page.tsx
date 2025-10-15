@@ -29,7 +29,8 @@ export default function ContactPage() {
     email: '',
     phone: '',
     subject: '',
-    message: ''
+    message: '',
+    honeypot: '' // Bot detection field - should remain empty
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
@@ -68,7 +69,8 @@ export default function ContactPage() {
           email: '',
           phone: '',
           subject: '',
-          message: ''
+          message: '',
+          honeypot: ''
         })
       } else {
         throw new Error(result.error || 'Failed to send message')
@@ -314,6 +316,20 @@ export default function ContactPage() {
               )}
 
               <form onSubmit={handleSubmit} className="space-y-6">
+                {/* Honeypot field for bot detection - hidden from users */}
+                <div style={{ position: 'absolute', left: '-9999px', width: '1px', height: '1px', overflow: 'hidden' }} aria-hidden="true">
+                  <label htmlFor="website">Website (leave blank)</label>
+                  <Input
+                    id="website"
+                    name="honeypot"
+                    type="text"
+                    value={formData.honeypot}
+                    onChange={handleInputChange}
+                    tabIndex={-1}
+                    autoComplete="off"
+                  />
+                </div>
+
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-2">

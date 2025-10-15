@@ -1,0 +1,42 @@
+Contact: mailto:cliniconemedical@gmail.com
+Contact: tel:+1-780-761-2430
+Expires: 2026-12-31T23:59:59.000Z
+Preferred-Languages: en
+Canonical: https://clinic1medical.com/.well-known/security.txt
+
+# Security Policy for Clinic 1 Medical Website
+
+# Please report security vulnerabilities to:
+# Email: cliniconemedical@gmail.com
+# Phone: 780-761-2430
+
+# Scope:
+# This security policy applies to the Clinic 1 Medical website (clinic1medical.com)
+# including all subdomains and web applications.
+
+# What to Report:
+# - Cross-Site Scripting (XSS)
+# - SQL Injection
+# - Authentication/Authorization issues
+# - Data exposure vulnerabilities
+# - Security misconfigurations
+# - Any other security concerns
+
+# Please DO NOT report:
+# - Issues requiring physical access to the facility
+# - Social engineering attacks
+# - Denial of Service (DoS) attacks
+# - Spam or phishing reports (unless related to our domain)
+
+# Response Time:
+# We aim to acknowledge security reports within 48 hours
+# and provide updates on remediation within 7 business days.
+
+# Responsible Disclosure:
+# Please allow us reasonable time to address the issue before
+# public disclosure. We appreciate your cooperation in keeping
+# our patients' data secure.
+
+Acknowledgments: https://clinic1medical.com/security
+Policy: https://clinic1medical.com/security-policy
+Hiring: https://clinic1medical.com/careers
